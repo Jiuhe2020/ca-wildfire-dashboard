@@ -20,6 +20,9 @@
     - Plotly
   - HTML/CSS
   - SQL
+  
+  ### Data Links:
+    
     
 ##
 
@@ -31,9 +34,6 @@
 
 
 
-## Data Links
-
   
-  
-
+ 
 
