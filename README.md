@@ -3,7 +3,7 @@
 
 ## Project Proposal
 - Design an interactive JavaScript dashboard webpage containing a leaflet map and summary table for 2019 California Wildfires where the user can filter the data by month,
-  as well as a variety of plotly charts to compare wilfire impact by county. 
+  as well as a separate page of plotly charts to further summarize wilfire environmental and economic impact. Final data loaded into a PostgreSQL database using Flask.
   
   ### Team Members:
     - Zac Cheatle
