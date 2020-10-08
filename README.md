@@ -30,8 +30,10 @@
 Utilize Pandas to extract 2019 fire data from the geojson.
 Utilize Pandas to clean the California Fire Incidents csv to filter for 2019 and drop unwanted columns. 
 
+## Part II - Enginner Wildfires Database
 
-## Part II - Flask App to Load Wrangled Data into a SQL Database
+
+## Part II - Flask App
 
 
 ## Part III - Interactive JavaScript Dashboard
