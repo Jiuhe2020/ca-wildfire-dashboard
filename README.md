@@ -23,7 +23,7 @@
   - SQL
   
   ### Data Used:
-  - California Wildfire CSV (update this link to the csv file when project is done)
+  - California Wildfire.csv (update this link to the csv file when project is done)
   - This [website] (https://www.convertcsv.com/csv-to-geojson.htm) is used to convert csv file into GeoJSON.
   - [California Wildfire Incidents](https://www.kaggle.com/ananthu017/california-wildfire-incidents-20132020)
   
