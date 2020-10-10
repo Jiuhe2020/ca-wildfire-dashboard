@@ -23,7 +23,8 @@
   - SQL
   
   ### Data Used:
-  - [California Wildfire Geojson](https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/Public_Wildfire_Perimeters_View/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=json)
+  - California Wildfire CSV (update this link to the csv file when project is done)
+  - This [website] (https://www.convertcsv.com/csv-to-geojson.htm) is used to convert csv file into GeoJSON.
   - [California Wildfire Incidents](https://www.kaggle.com/ananthu017/california-wildfire-incidents-20132020)
   
 ## Part I - Data Extraction and Cleaning 
