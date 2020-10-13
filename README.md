@@ -13,15 +13,15 @@
       - Paule Nguendang
     
   ### Tools Used:
-  - Python
-    - Pandas
-    - Flask
-  - JavaScript
-    - Leaflet
-    - Plotly
-  - HTML/CSS
-  - PostgreSQL
-  - Excel
+      - Python
+        - Pandas
+        - Flask
+      - JavaScript
+        - Leaflet
+        - Plotly
+      - HTML/CSS
+      - PostgreSQL
+      - Excel
   
   ### Data Used:
   - California Wildfire.csv (update this link to the csv file when project is done.
