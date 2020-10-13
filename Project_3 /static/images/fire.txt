@@ -1,0 +1,174 @@
+// from data.js, write code that appends a table to your web page and then add new rows of data for each UFO sighting
+// var tableData = data[0];
+
+// variable declaration
+var tbody = d3.select('tbody');
+
+var tableData2 = data;
+console.log(tableData2);
+
+// Build Table
+    // 1. clear existing data
+    // 2. loop through all row in data.js
+    // 3. Append the table row 'tr' to the table body 'tbody'
+    // 4. Iterate through the values using the object.values and the forEach
+    // 5. For each value, append a cell to the row.
+function buildTable(tableData2){
+    tbody.html('');
+    tableData2.forEach((dataRow) => {
+        var row = tbody.append('tr');
+        // Get the entries for each function in the array
+        Object.values(dataRow).forEach((value) => {
+            var cell = row.append('td');
+            cell.text(value);
+        });
+
+    });
+};
+
+buildTable(tableData2);
+// print arrays to console
+console.log(tableData2);
+
+// PART II 
+// Code that will listen for events and search through the `month` column to find rows that match user input
+function handleButtonClick(){
+    // prevent the page from refreshing
+    d3.event.preventDefault();
+    var date = d3.select('#month').property('value');
+    var filterData = tableData2;
+
+    if (date) {
+        filterData = filterData.filter((row) => row.Month === date);
+    }
+    // Build data
+    buildTable(filterData);
+}
+
+var filterBotton = d3.selectAll('#filter-btn').on('click', handleButtonClick);
+buildTable(tableData2);
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>2019 California Wildfire Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/style.css"> 
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">2019 California Wildfire Dashboard
+          </a>
+        </div>
+      </div>
+    </nav> 
+    <div class="hero text-center">
+      <h1>2019 California Wildfire Dashboard</h1>
+      <p>Table that shows fire incident in each month</p>
+    </div>
+    <div class="container">
+      <div class="row margin-top-50">
+        <div class="col-md-2">
+          <aside class="filters">
+            <div class="panel panel-default">
+              <div class="panel-heading">Filter Search</div>
+              <div class="panel-body">
+                <form>
+                  <div class="form-group">
+                    <ul class="list-group" id="filters">
+                      <li class="filter list-group-item">
+                        <label for="month">Month</label>
+                        <input class="form-control" id="month" type="text" placeholder="January">
+                      </li>
+                    </ul>
+                  </div>
+                  <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
+                </form>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <div class="col-md-10">
+          <div id="table-area" class="">
+            <table id="cali-table" class="table table-striped">
+              <thead>
+                <tr>
+                  <th title="Field #2">AcresBurned</th>
+                  <th title="Field #5">Counties</th>
+                  <th title="Field #6">CountyIds</th>
+                  <th title="Field #7">Extinguished</th>
+                  <th title="Field #9">Latitude</th>
+                  <th title="Field #10">Longitude</th>
+                  <th title="Field #11">Location</th>
+                  <th title="Field #12">Name</th>
+                  <th title="Field #18">ArchiveYear</th>
+                  <th title="Field #19">Started</th>
+                  <th title="Field #20">Ended</th>
+                  <th title="Field #21">Cord</th>
+                  <th title="Field #22">Fahrenheit</th>
+                  <th title="Field #23">Month_number</th>
+                  <th title="Field #24">Month</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <span class="bottom">California Wildfire</span>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <script src="static/js/data.js"></script>
+  <script src="static/js/fire_temp_app.js"></script>
+</body>
+
+</html>
+
+
+<!-- <img class="nav-cali" src="static/images/fire.svg"> -->
+
+
+ <button class ="dropbtn">Dropdown</button>
+              </div class="dropdown-content">
+                  <a href="#">January</a>
+                  <a href="#"></a>
+                  <a href="#">February</a>
+                  <a href="#">March</a>
+                  <a href="#">April</a>
+                  <a href="#">May</a>
+                  <a href="#">June</a>
+                  <a href="#">July</a>
+                  <a href="#">August</a>
+                  <a href="#">September</a>
+                  <a href="#">October</a>
+                  <a href="#">November</a>
+                  <a href="#">December</a>
+
+                            <ul>
+                                <li>January</li>
+                                <li>February</li>
+                                <li>March</li>
+                                <li>April</li>
+                                <li>May</li>
+                                <li>June</li>
+                                <li>July</li>
+                                <li>August</li>
+                                <li>September</li>
+                                <li>October</li>
+                                <li>November</li>
+                                <li><December/li>
+                            </ul>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>2019 California Wildfire Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/style.css"> 
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">2019 California Wildfire Dashboard
+          </a>
+        </div>
+      </div>
+    </nav> 
+    <div class="hero text-center">
+      <h1>2019 California Wildfire Dashboard</h1>
+      <p>Table that shows fire incident in each month</p>
+    </div>
+    <div class="container">
+      <div class="row margin-top-50">
+        <div class="col-md-2">
+          <aside class="filters">
+            <div class="panel panel-default">
+              <div class="panel-heading">Filter Search</div>
+              <div class="panel-body"> 
+                <form>
+                  <div class="form-group">
+                    <ul class="list-group" id="filters">
+                      <li class="filter list-group-item">
+                        <label for="month">Month</label>
+                              <input class="form-control" id="month" type="text" placeholder="January">
+                      </li>
+                    </ul>
+                  </div>
+                  <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
+                </form>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <div class="col-md-10">
+          <div id="table-area" class="">
+            <table id="cali-table" class="table table-striped">
+              <thead>
+                <tr>
+                  <th title="Field #2">AcresBurned</th>
+                  <th title="Field #5">Counties</th>
+                  <th title="Field #6">CountyIds</th>
+                  <th title="Field #7">Extinguished</th>
+                  <th title="Field #9">Latitude</th>
+                  <th title="Field #10">Longitude</th>
+                  <th title="Field #11">Location</th>
+                  <th title="Field #12">Name</th>
+                  <th title="Field #18">ArchiveYear</th>
+                  <th title="Field #19">Started</th>
+                  <th title="Field #20">Ended</th>
+                  <th title="Field #21">Cord</th>
+                  <th title="Field #22">Fahrenheit</th>
+                  <th title="Field #23">Month_number</th>
+                  <th title="Field #24">Month</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <span class="bottom">California Wildfire</span>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <script src="static/js/data.js"></script>
+  <script src="static/js/fire_temp_app.js"></script>
+</body>
+
+</html>
+
+
+<!-- <img class="nav-cali" src="static/images/fire.svg"> -->
+
+

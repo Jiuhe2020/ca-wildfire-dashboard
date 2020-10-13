@@ -1,0 +1,27 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#map,
+body,
+html {
+  height: 100%;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+  background-color:rgba(78,93,108,.75)   
+ }
+ .table-striped>tbody>tr:nth-of-type(even) {
+     background-color:rgba(253, 255, 252, 0.5)   
+    }
+ ​
+ .backgrou {
+ background-image: url("/w3images/photographer.jpg");
+ background-color: #cccccc;
+ height: 500px;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ position: relative;
+ }
