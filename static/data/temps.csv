@@ -1,0 +1,697 @@
+county_id,month_number,month_name,county,fahrenheit
+1,1,January,Alameda,50.8
+1,2,February,Alameda,46
+1,3,March,Alameda,51.7
+1,4,April,Alameda,59.3
+1,5,May,Alameda,58.5
+1,6,June,Alameda,69
+1,7,July,Alameda,70.3
+1,8,August,Alameda,72.7
+1,9,September,Alameda,68.5
+1,10,October,Alameda,62.6
+1,11,November,Alameda,56.2
+1,12,December,Alameda,49.5
+2,1,January,Alpine,33.4
+2,2,February,Alpine,24.9
+2,3,March,Alpine,32.4
+2,4,April,Alpine,42
+2,5,May,Alpine,43.2
+2,6,June,Alpine,54.2
+2,7,July,Alpine,60.6
+2,8,August,Alpine,62.5
+2,9,September,Alpine,52.8
+2,10,October,Alpine,43.6
+2,11,November,Alpine,40
+2,12,December,Alpine,31.9
+3,1,January,Amador,46.5
+3,2,February,Amador,38.9
+3,3,March,Amador,47.4
+3,4,April,Amador,57
+3,5,May,Amador,56.6
+3,6,June,Amador,70.9
+3,7,July,Amador,74.6
+3,8,August,Amador,75.8
+3,9,September,Amador,66.8
+3,10,October,Amador,60
+3,11,November,Amador,54.3
+3,12,December,Amador,44.6
+4,1,January,Butte,48.1
+4,2,February,Butte,42.3
+4,3,March,Butte,49.9
+4,4,April,Butte,60.3
+4,5,May,Butte,61.2
+4,6,June,Butte,74.1
+4,7,July,Butte,76.6
+4,8,August,Butte,77.5
+4,9,September,Butte,69.9
+4,10,October,Butte,60.3
+4,11,November,Butte,55.2
+4,12,December,Butte,46.8
+5,1,January,Calaveras,46.9
+5,2,February,Calaveras,39.8
+5,3,March,Calaveras,47.7
+5,4,April,Calaveras,57.4
+5,5,May,Calaveras,56.9
+5,6,June,Calaveras,71.2
+5,7,July,Calaveras,74.8
+5,8,August,Calaveras,76
+5,9,September,Calaveras,67.6
+5,10,October,Calaveras,60.5
+5,11,November,Calaveras,54.7
+5,12,December,Calaveras,44.9
+6,1,January,Colusa,48.4
+6,2,February,Colusa,44.3
+6,3,March,Colusa,51.2
+6,4,April,Colusa,62.4
+6,5,May,Colusa,63.4
+6,6,June,Colusa,76.2
+6,7,July,Colusa,77.5
+6,8,August,Colusa,78.8
+6,9,September,Colusa,71
+6,10,October,Colusa,62.6
+6,11,November,Colusa,57.1
+6,12,December,Colusa,47.2
+7,1,January,Contra Costa,50.4
+7,2,February,Contra Costa,46
+7,3,March,Contra Costa,52.7
+7,4,April,Contra Costa,61
+7,5,May,Contra Costa,59.4
+7,6,June,Contra Costa,70.9
+7,7,July,Contra Costa,71.7
+7,8,August,Contra Costa,73.9
+7,9,September,Contra Costa,69.7
+7,10,October,Contra Costa,64.2
+7,11,November,Contra Costa,57.6
+7,12,December,Contra Costa,49.4
+8,1,January,Del Norte,44.2
+8,2,February,Del Norte,35.3
+8,3,March,Del Norte,44.6
+8,4,April,Del Norte,51
+8,5,May,Del Norte,54.9
+8,6,June,Del Norte,62.6
+8,7,July,Del Norte,64.4
+8,8,August,Del Norte,67.3
+8,9,September,Del Norte,58.5
+8,10,October,Del Norte,51.5
+8,11,November,Del Norte,49.5
+8,12,December,Del Norte,41.8
+9,1,January,El Dorado,43.2
+9,2,February,El Dorado,34.4
+9,3,March,El Dorado,42.3
+9,4,April,El Dorado,52.1
+9,5,May,El Dorado,52.6
+9,6,June,El Dorado,66
+9,7,July,El Dorado,70.6
+9,8,August,El Dorado,72
+9,9,September,El Dorado,62.8
+9,10,October,El Dorado,54.8
+9,11,November,El Dorado,50
+9,12,December,El Dorado,41.1
+10,1,January,Fresno,43.6
+10,2,February,Fresno,38.3
+10,3,March,Fresno,45.7
+10,4,April,Fresno,55.5
+10,5,May,Fresno,54.8
+10,6,June,Fresno,69
+10,7,July,Fresno,73.2
+10,8,August,Fresno,74.1
+10,9,September,Fresno,66.4
+10,10,October,Fresno,56
+10,11,November,Fresno,50.5
+10,12,December,Fresno,42.4
+11,1,January,Glenn,47.6
+11,2,February,Glenn,42.8
+11,3,March,Glenn,49.6
+11,4,April,Glenn,60.4
+11,5,May,Glenn,61.4
+11,6,June,Glenn,74.7
+11,7,July,Glenn,77.1
+11,8,August,Glenn,78.3
+11,9,September,Glenn,70
+11,10,October,Glenn,61.4
+11,11,November,Glenn,55.7
+11,12,December,Glenn,46.7
+12,1,January,Humboldt,46
+12,2,February,Humboldt,39.9
+12,3,March,Humboldt,47
+12,4,April,Humboldt,53.6
+12,5,May,Humboldt,56
+12,6,June,Humboldt,63.1
+12,7,July,Humboldt,67.1
+12,8,August,Humboldt,69.8
+12,9,September,Humboldt,62.8
+12,10,October,Humboldt,55
+12,11,November,Humboldt,49.6
+12,12,December,Humboldt,44.8
+13,1,January,Imperial,55.6
+13,2,February,Imperial,54
+13,3,March,Imperial,64.6
+13,4,April,Imperial,73.6
+13,5,May,Imperial,73.4
+13,6,June,Imperial,86.3
+13,7,July,Imperial,93.2
+13,8,August,Imperial,94.1
+13,9,September,Imperial,85.8
+13,10,October,Imperial,73.1
+13,11,November,Imperial,65.4
+13,12,December,Imperial,55.2
+14,1,January,Inyo,44.2
+14,2,February,Inyo,39.6
+14,3,March,Inyo,49.6
+14,4,April,Inyo,60.8
+14,5,May,Inyo,60.8
+14,6,June,Inyo,76.6
+14,7,July,Inyo,81.8
+14,8,August,Inyo,82.5
+14,9,September,Inyo,72.5
+14,10,October,Inyo,59
+14,11,November,Inyo,52.6
+14,12,December,Inyo,41.3
+15,1,January,Kern,48
+15,2,February,Kern,43.9
+15,3,March,Kern,51.8
+15,4,April,Kern,62.1
+15,5,May,Kern,61.3
+15,6,June,Kern,76.2
+15,7,July,Kern,80.3
+15,8,August,Kern,80.7
+15,9,September,Kern,72.6
+15,10,October,Kern,61.9
+15,11,November,Kern,55.4
+15,12,December,Kern,46.5
+16,1,January,Kings,50
+16,2,February,Kings,49
+16,3,March,Kings,55.8
+16,4,April,Kings,65
+16,5,May,Kings,65.6
+16,6,June,Kings,78.5
+16,7,July,Kings,81.9
+16,8,August,Kings,82.4
+16,9,September,Kings,74.7
+16,10,October,Kings,63
+16,11,November,Kings,55.8
+16,12,December,Kings,49.3
+17,1,January,Lake,46.6
+17,2,February,Lake,39
+17,3,March,Lake,46.2
+17,4,April,Lake,56.4
+17,5,May,Lake,57.2
+17,6,June,Lake,70.2
+17,7,July,Lake,73.3
+17,8,August,Lake,74.9
+17,9,September,Lake,66.6
+17,10,October,Lake,59.2
+17,11,November,Lake,54.1
+17,12,December,Lake,44.3
+18,1,January,Lassen,33.9
+18,2,February,Lassen,27.1
+18,3,March,Lassen,35.9
+18,4,April,Lassen,46.5
+18,5,May,Lassen,49.6
+18,6,June,Lassen,59.8
+18,7,July,Lassen,66.1
+18,8,August,Lassen,67.3
+18,9,September,Lassen,55.9
+18,10,October,Lassen,43.8
+18,11,November,Lassen,40.8
+18,12,December,Lassen,32.8
+19,1,January,Los Angeles,50.6
+19,2,February,Los Angeles,45
+19,3,March,Los Angeles,52.9
+19,4,April,Los Angeles,60.4
+19,5,May,Los Angeles,58.3
+19,6,June,Los Angeles,70.3
+19,7,July,Los Angeles,75.8
+19,8,August,Los Angeles,76.7
+19,9,September,Los Angeles,71.7
+19,10,October,Los Angeles,64.3
+19,11,November,Los Angeles,57.8
+19,12,December,Los Angeles,48.6
+20,1,January,Madera,44.5
+20,2,February,Madera,38.9
+20,3,March,Madera,46.4
+20,4,April,Madera,55.7
+20,5,May,Madera,55.4
+20,6,June,Madera,69.5
+20,7,July,Madera,73.3
+20,8,August,Madera,74.4
+20,9,September,Madera,66.8
+20,10,October,Madera,56.3
+20,11,November,Madera,51
+20,12,December,Madera,43.3
+21,1,January,Marin,51.9
+21,2,February,Marin,46.4
+21,3,March,Marin,51.4
+21,4,April,Marin,56.8
+21,5,May,Marin,54.8
+21,6,June,Marin,62.2
+21,7,July,Marin,62
+21,8,August,Marin,65.9
+21,9,September,Marin,64.2
+21,10,October,Marin,61
+21,11,November,Marin,55.4
+21,12,December,Marin,50.6
+22,1,January,Mariposa,43.5
+22,2,February,Mariposa,35.9
+22,3,March,Mariposa,44.3
+22,4,April,Mariposa,54.1
+22,5,May,Mariposa,53.5
+22,6,June,Mariposa,68
+22,7,July,Mariposa,72.2
+22,8,August,Mariposa,73.4
+22,9,September,Mariposa,65.4
+22,10,October,Mariposa,56.4
+22,11,November,Mariposa,51.2
+22,12,December,Mariposa,41.6
+23,1,January,Mendocino,47.1
+23,2,February,Mendocino,40.9
+23,3,March,Mendocino,47
+23,4,April,Mendocino,54.8
+23,5,May,Mendocino,56
+23,6,June,Mendocino,65.7
+23,7,July,Mendocino,68.4
+23,8,August,Mendocino,70.8
+23,9,September,Mendocino,64.4
+23,10,October,Mendocino,56.7
+23,11,November,Mendocino,52.7
+23,12,December,Mendocino,45.9
+24,1,January,Merced,50.2
+24,2,February,Merced,48
+24,3,March,Merced,54.2
+24,4,April,Merced,63.5
+24,5,May,Merced,63
+24,6,June,Merced,75.1
+24,7,July,Merced,77.9
+24,8,August,Merced,78.8
+24,9,September,Merced,73
+24,10,October,Merced,63.2
+24,11,November,Merced,56.3
+24,12,December,Merced,50
+25,1,January,Modoc,34.6
+25,2,February,Modoc,27.1
+25,3,March,Modoc,36.4
+25,4,April,Modoc,46
+25,5,May,Modoc,50.4
+25,6,June,Modoc,59.7
+25,7,July,Modoc,66
+25,8,August,Modoc,67.1
+25,9,September,Modoc,55.3
+25,10,October,Modoc,43.8
+25,11,November,Modoc,41.4
+25,12,December,Modoc,33
+26,1,January,Mono,31.5
+26,2,February,Mono,23.3
+26,3,March,Mono,32.6
+26,4,April,Mono,43.2
+26,5,May,Mono,44
+26,6,June,Mono,56.4
+26,7,July,Mono,63.1
+26,8,August,Mono,64.3
+26,9,September,Mono,54.1
+26,10,October,Mono,42.7
+26,11,November,Mono,37.9
+26,12,December,Mono,29.1
+27,1,January,Monterey,51.1
+27,2,February,Monterey,45.7
+27,3,March,Monterey,51.7
+27,4,April,Monterey,58.5
+27,5,May,Monterey,58.2
+27,6,June,Monterey,67.5
+27,7,July,Monterey,70.2
+27,8,August,Monterey,72.2
+27,9,September,Monterey,69.6
+27,10,October,Monterey,61.6
+27,11,November,Monterey,55.3
+27,12,December,Monterey,50.1
+28,1,January,Napa,49.9
+28,2,February,Napa,44.8
+28,3,March,Napa,51.4
+28,4,April,Napa,60.1
+28,5,May,Napa,60
+28,6,June,Napa,71.2
+28,7,July,Napa,72.7
+28,8,August,Napa,74.7
+28,9,September,Napa,69.4
+28,10,October,Napa,61.9
+28,11,November,Napa,54.9
+28,12,December,Napa,48.5
+29,1,January,Nevada,40.5
+29,2,February,Nevada,32.9
+29,3,March,Nevada,40.8
+29,4,April,Nevada,50.8
+29,5,May,Nevada,52.1
+29,6,June,Nevada,65
+29,7,July,Nevada,69.1
+29,8,August,Nevada,70.4
+29,9,September,Nevada,61.1
+29,10,October,Nevada,52.6
+29,11,November,Nevada,48.2
+29,12,December,Nevada,39.3
+30,1,January,Orange,57
+30,2,February,Orange,51.4
+30,3,March,Orange,58.1
+30,4,April,Orange,62.8
+30,5,May,Orange,61.3
+30,6,June,Orange,67.9
+30,7,July,Orange,73.2
+30,8,August,Orange,74.4
+30,9,September,Orange,73.8
+30,10,October,Orange,69.6
+30,11,November,Orange,62.7
+30,12,December,Orange,56
+31,1,January,Placer,42.2
+31,2,February,Placer,34.7
+31,3,March,Placer,42.5
+31,4,April,Placer,52.4
+31,5,May,Placer,53.6
+31,6,June,Placer,66.2
+31,7,July,Placer,70.3
+31,8,August,Placer,71.7
+31,9,September,Placer,62.6
+31,10,October,Placer,54
+31,11,November,Placer,49.5
+31,12,December,Placer,40.8
+32,1,January,Plumas,35.6
+32,2,February,Plumas,28.4
+32,3,March,Plumas,36
+32,4,April,Plumas,46.6
+32,5,May,Plumas,48.7
+32,6,June,Plumas,60.3
+32,7,July,Plumas,64.9
+32,8,August,Plumas,66.4
+32,9,September,Plumas,56.7
+32,10,October,Plumas,45.5
+32,11,November,Plumas,41.7
+32,12,December,Plumas,34.1
+33,1,January,Riverside,52.7
+33,2,February,Riverside,48.7
+33,3,March,Riverside,58.6
+33,4,April,Riverside,67.8
+33,5,May,Riverside,67.2
+33,6,June,Riverside,80.7
+33,7,July,Riverside,86.7
+33,8,August,Riverside,87.7
+33,9,September,Riverside,79.9
+33,10,October,Riverside,68.6
+33,11,November,Riverside,60.9
+33,12,December,Riverside,51.7
+34,1,January,Sacramento,50.5
+34,2,February,Sacramento,47.4
+34,3,March,Sacramento,54.2
+34,4,April,Sacramento,63.3
+34,5,May,Sacramento,63.5
+34,6,June,Sacramento,75.2
+34,7,July,Sacramento,77.2
+34,8,August,Sacramento,78.5
+34,9,September,Sacramento,72.3
+34,10,October,Sacramento,63.7
+34,11,November,Sacramento,56.6
+34,12,December,Sacramento,50
+35,1,January,San Benito,48.7
+35,2,February,San Benito,42.8
+35,3,March,San Benito,49.5
+35,4,April,San Benito,58.5
+35,5,May,San Benito,57.6
+35,6,June,San Benito,69.9
+35,7,July,San Benito,73.4
+35,8,August,San Benito,74.9
+35,9,September,San Benito,69.5
+35,10,October,San Benito,61.5
+35,11,November,San Benito,55.1
+35,12,December,San Benito,47.6
+36,1,January,San Bernardino,49
+36,2,February,San Bernardino,45.3
+36,3,March,San Bernardino,55.6
+36,4,April,San Bernardino,66.4
+36,5,May,San Bernardino,65.8
+36,6,June,San Bernardino,81.7
+36,7,July,San Bernardino,87.1
+36,8,August,San Bernardino,87.6
+36,9,September,San Bernardino,78.2
+36,10,October,San Bernardino,65.3
+36,11,November,San Bernardino,57.4
+36,12,December,San Bernardino,46.9
+37,1,January,San Diego,52.5
+37,2,February,San Diego,47.5
+37,3,March,San Diego,54.7
+37,4,April,San Diego,61.4
+37,5,May,San Diego,59.8
+37,6,June,San Diego,70.3
+37,7,July,San Diego,76.2
+37,8,August,San Diego,77.6
+37,9,September,San Diego,72.7
+37,10,October,San Diego,65.4
+37,11,November,San Diego,59.2
+37,12,December,San Diego,51.7
+38,1,January,San Francisco,53.1
+38,2,February,San Francisco,48.5
+38,3,March,San Francisco,53.4
+38,4,April,San Francisco,57.6
+38,5,May,San Francisco,56.5
+38,6,June,San Francisco,62.8
+38,7,July,San Francisco,62.5
+38,8,August,San Francisco,65.9
+38,9,September,San Francisco,65.5
+38,10,October,San Francisco,61.6
+38,11,November,San Francisco,55.6
+38,12,December,San Francisco,52
+39,1,January,San Joaquin,50.9
+39,2,February,San Joaquin,47.7
+39,3,March,San Joaquin,54.2
+39,4,April,San Joaquin,63.6
+39,5,May,San Joaquin,63.3
+39,6,June,San Joaquin,75
+39,7,July,San Joaquin,77.2
+39,8,August,San Joaquin,78.4
+39,9,September,San Joaquin,72.1
+39,10,October,San Joaquin,63.7
+39,11,November,San Joaquin,56.7
+39,12,December,San Joaquin,50.3
+40,1,January,San Luis,50.9
+40,2,February,San Luis,45.1
+40,3,March,San Luis,51.3
+40,4,April,San Luis,59.3
+40,5,May,San Luis,58.2
+40,6,June,San Luis,68.9
+40,7,July,San Luis,72.2
+40,8,August,San Luis,73.6
+40,9,September,San Luis,69.5
+40,10,October,San Luis,62
+40,11,November,San Luis,56.1
+40,12,December,San Luis,49.9
+41,1,January,San Mateo,52.4
+41,2,February,San Mateo,47.4
+41,3,March,San Mateo,52.2
+41,4,April,San Mateo,57.2
+41,5,May,San Mateo,57.1
+41,6,June,San Mateo,63.8
+41,7,July,San Mateo,64.4
+41,8,August,San Mateo,67.3
+41,9,September,San Mateo,66.1
+41,10,October,San Mateo,61
+41,11,November,San Mateo,54.6
+41,12,December,San Mateo,51.4
+42,1,January,Santa Barbara,51.7
+42,2,February,Santa Barbara,45.6
+42,3,March,Santa Barbara,51.8
+42,4,April,Santa Barbara,57.8
+42,5,May,Santa Barbara,57.3
+42,6,June,Santa Barbara,65.6
+42,7,July,Santa Barbara,69
+42,8,August,Santa Barbara,70
+42,9,September,Santa Barbara,69
+42,10,October,Santa Barbara,61.7
+42,11,November,Santa Barbara,56.1
+42,12,December,Santa Barbara,50.7
+43,1,January,Santa Clara,49.9
+43,2,February,Santa Clara,44.2
+43,3,March,Santa Clara,50.6
+43,4,April,Santa Clara,58.4
+43,5,May,Santa Clara,57.8
+43,6,June,Santa Clara,68.1
+43,7,July,Santa Clara,70.2
+43,8,August,Santa Clara,72.4
+43,9,September,Santa Clara,69
+43,10,October,Santa Clara,61.9
+43,11,November,Santa Clara,55.6
+43,12,December,Santa Clara,48.2
+44,1,January,Santa Cruz,52.3
+44,2,February,Santa Cruz,47.2
+44,3,March,Santa Cruz,52.2
+44,4,April,Santa Cruz,57.8
+44,5,May,Santa Cruz,57.7
+44,6,June,Santa Cruz,64.1
+44,7,July,Santa Cruz,66
+44,8,August,Santa Cruz,68.7
+44,9,September,Santa Cruz,68.4
+44,10,October,Santa Cruz,61.8
+44,11,November,Santa Cruz,55
+44,12,December,Santa Cruz,51.4
+45,1,January,Shasta,43.1
+45,2,February,Shasta,36
+45,3,March,Shasta,44
+45,4,April,Shasta,54.7
+45,5,May,Shasta,57.6
+45,6,June,Shasta,69.5
+45,7,July,Shasta,73.4
+45,8,August,Shasta,74.1
+45,9,September,Shasta,65
+45,10,October,Shasta,54.4
+45,11,November,Shasta,50.6
+45,12,December,Shasta,40.1
+46,1,January,Sierra,35.7
+46,2,February,Sierra,27.7
+46,3,March,Sierra,36.2
+46,4,April,Sierra,45.7
+46,5,May,Sierra,47.5
+46,6,June,Sierra,59.5
+46,7,July,Sierra,64.4
+46,8,August,Sierra,65.6
+46,9,September,Sierra,56.1
+46,10,October,Sierra,46.5
+46,11,November,Sierra,42.7
+46,12,December,Sierra,34.6
+47,1,January,Siskiyou,38.2
+47,2,February,Siskiyou,30.1
+47,3,March,Siskiyou,39
+47,4,April,Siskiyou,47.4
+47,5,May,Siskiyou,52.2
+47,6,June,Siskiyou,61.4
+47,7,July,Siskiyou,66.5
+47,8,August,Siskiyou,68.6
+47,9,September,Siskiyou,57.5
+47,10,October,Siskiyou,47
+47,11,November,Siskiyou,44.4
+47,12,December,Siskiyou,35.5
+48,1,January,Solano,50.9
+48,2,February,Solano,47.4
+48,3,March,Solano,54
+48,4,April,Solano,62.4
+48,5,May,Solano,61.8
+48,6,June,Solano,72.7
+48,7,July,Solano,73.5
+48,8,August,Solano,75.5
+48,9,September,Solano,71.3
+48,10,October,Solano,63.6
+48,11,November,Solano,56.3
+48,12,December,Solano,49.9
+49,1,January,Sonoma,50.6
+49,2,February,Sonoma,45
+49,3,March,Sonoma,50.4
+49,4,April,Sonoma,57.6
+49,5,May,Sonoma,56.5
+49,6,June,Sonoma,65.2
+49,7,July,Sonoma,67
+49,8,August,Sonoma,69.6
+49,9,September,Sonoma,66.3
+49,10,October,Sonoma,60.8
+49,11,November,Sonoma,54.7
+49,12,December,Sonoma,49.6
+50,1,January,Stanislaus,50.2
+50,2,February,Stanislaus,47
+50,3,March,Stanislaus,53.4
+50,4,April,Stanislaus,62.9
+50,5,May,Stanislaus,62.6
+50,6,June,Stanislaus,74.8
+50,7,July,Stanislaus,77.4
+50,8,August,Stanislaus,78.4
+50,9,September,Stanislaus,72.2
+50,10,October,Stanislaus,62.9
+50,11,November,Stanislaus,56.1
+50,12,December,Stanislaus,49.7
+51,1,January,Sutter,49.9
+51,2,February,Sutter,47.5
+51,3,March,Sutter,54.1
+51,4,April,Sutter,64.3
+51,5,May,Sutter,65.4
+51,6,June,Sutter,77.4
+51,7,July,Sutter,78.7
+51,8,August,Sutter,79.7
+51,9,September,Sutter,73
+51,10,October,Sutter,63.3
+51,11,November,Sutter,56.7
+51,12,December,Sutter,49.8
+52,1,January,Tehama,46.5
+52,2,February,Tehama,39.6
+52,3,March,Tehama,47.6
+52,4,April,Tehama,58.5
+52,5,May,Tehama,59.9
+52,6,June,Tehama,73.3
+52,7,July,Tehama,76.2
+52,8,August,Tehama,77.2
+52,9,September,Tehama,68.3
+52,10,October,Tehama,59.2
+52,11,November,Tehama,54.6
+52,12,December,Tehama,44.6
+53,1,January,Trinity,41.5
+53,2,February,Trinity,34.6
+53,3,March,Trinity,42.7
+53,4,April,Trinity,51.7
+53,5,May,Trinity,55
+53,6,June,Trinity,65.1
+53,7,July,Trinity,69.5
+53,8,August,Trinity,72
+53,9,September,Trinity,62.7
+53,10,October,Trinity,52.4
+53,11,November,Trinity,47.8
+53,12,December,Trinity,39.7
+54,1,January,Tulare,41.8
+54,2,February,Tulare,36.8
+54,3,March,Tulare,44.1
+54,4,April,Tulare,53.6
+54,5,May,Tulare,52.6
+54,6,June,Tulare,67.4
+54,7,July,Tulare,71.6
+54,8,August,Tulare,72.4
+54,9,September,Tulare,64.6
+54,10,October,Tulare,54.2
+54,11,November,Tulare,49.1
+54,12,December,Tulare,40.3
+55,1,January,Tuolumne,39.3
+55,2,February,Tuolumne,30.6
+55,3,March,Tuolumne,38.8
+55,4,April,Tuolumne,48.6
+55,5,May,Tuolumne,48.1
+55,6,June,Tuolumne,61.9
+55,7,July,Tuolumne,66.6
+55,8,August,Tuolumne,68.4
+55,9,September,Tuolumne,59.9
+55,10,October,Tuolumne,51.4
+55,11,November,Tuolumne,46.7
+55,12,December,Tuolumne,37.5
+56,1,January,Ventura,49.5
+56,2,February,Ventura,43.1
+56,3,March,Ventura,50.1
+56,4,April,Ventura,56.6
+56,5,May,Ventura,55.2
+56,6,June,Ventura,65.6
+56,7,July,Ventura,70.3
+56,8,August,Ventura,71
+56,9,September,Ventura,67.7
+56,10,October,Ventura,60.1
+56,11,November,Ventura,54.7
+56,12,December,Ventura,47.9
+57,1,January,Yolo,50
+57,2,February,Yolo,46.5
+57,3,March,Yolo,53.2
+57,4,April,Yolo,62.8
+57,5,May,Yolo,63.4
+57,6,June,Yolo,75.3
+57,7,July,Yolo,76.2
+57,8,August,Yolo,78
+57,9,September,Yolo,71.8
+57,10,October,Yolo,63.1
+57,11,November,Yolo,55.9
+57,12,December,Yolo,49.3
+58,1,January,Yuba,48.5
+58,2,February,Yuba,43.6
+58,3,March,Yuba,50.9
+58,4,April,Yuba,60.9
+58,5,May,Yuba,61.9
+58,6,June,Yuba,74.8
+58,7,July,Yuba,77.3
+58,8,August,Yuba,78
+58,9,September,Yuba,70
+58,10,October,Yuba,61
+58,11,November,Yuba,55.5
+58,12,December,Yuba,47.9
