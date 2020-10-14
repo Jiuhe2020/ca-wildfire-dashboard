@@ -12,33 +12,25 @@ html {
 /* Set Legend Style */
 .info {
   padding: 1px 10px;
-  background: #ebfae2;
+  background: #f7f6ef;
   border-radius: 5px;
 }
 
 .legend {
   line-height: 25px;
   color: #000000;
+  width: 120px;
 }
 
-.legend i {
-  width: 20px;
-  height: 20px;
-  float: right;
-  margin-right: 10px;
-  margin-left: 10px;
-  opacity: 0.75;
-}
-
-h3 {
+h5 {
   margin: 0px;
   padding: 2px;
-  text-align: center;
+  text-align: left;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 p {
-  margin: -5px;
-  padding: -6px;
+  margin: 0px;
+  padding: 0px;
   font-family: Arial, Helvetica, sans-serif;
 }
