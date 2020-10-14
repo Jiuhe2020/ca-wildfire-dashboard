@@ -1,12 +1,11 @@
 // Create layerGroups
 var wildfires = L.layerGroup();
-var temps = L.layerGroup();
 
 // Create tile layers
 var lightMap = L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}", {
   attribution: "© <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> © <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a> <strong><a href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a></strong>",
   tileSize: 512,
-  maxZoom: 20,
+  maxZoom: 18,
   zoomOffset: -1,
   id: "mapbox/streets-v11",
   accessToken: API_KEY
@@ -14,7 +13,7 @@ var lightMap = L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/
 
 var darkMap = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}", {
   attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"https://www.mapbox.com/\">Mapbox</a>",
-  maxZoom: 20,
+  maxZoom: 18,
   id: "dark-v10",
   accessToken: API_KEY
 });
@@ -29,7 +28,6 @@ var baseMaps = {
 // Create overlay object to hold the overlay layer
 var overlayMaps = {
   "Wild Fires": wildfires,
-  "Temperature (F)": temps
 };
 
 // Creating map object
@@ -46,53 +44,61 @@ L.control.layers(baseMaps, overlayMaps, {
   collapsed: false
 }).addTo(myMap);
 
+// Create fire icons on the map
+var fireIcons = L.Icon.extend(
+  {options: {
+    shadowUrl: 'https://raw.githubusercontent.com/zcheatle5/ca-wildfire-dashboard/main/fire_icons/markers_shadow.png',
+    iconSize: [60, 80],
+    iconAnchor: [30, 50],
+    popupAnchor: [0, -20],
+    shadowSize: [60, 60]
+  }
+});
+
+var fireIcon_1 = new fireIcons({iconUrl: 'https://raw.githubusercontent.com/zcheatle5/ca-wildfire-dashboard/main/fire_icons/fire_icon_1.png'}),
+    fireIcon_2 = new fireIcons({iconUrl: 'https://raw.githubusercontent.com/zcheatle5/ca-wildfire-dashboard/main/fire_icons/fire_icon_2.png'}),
+    fireIcon_3 = new fireIcons({iconUrl: 'https://raw.githubusercontent.com/zcheatle5/ca-wildfire-dashboard/main/fire_icons/fire_icon_3.png'}),
+    fireIcon_4 = new fireIcons({iconUrl: 'https://raw.githubusercontent.com/zcheatle5/ca-wildfire-dashboard/main/fire_icons/fire_icon_4.png'}),
+    fireIcon_5 = new fireIcons({iconUrl: 'https://raw.githubusercontent.com/zcheatle5/ca-wildfire-dashboard/main/fire_icons/fire_icon_5.png'}),
+    fireIcon_6 = new fireIcons({iconUrl: 'https://raw.githubusercontent.com/zcheatle5/ca-wildfire-dashboard/main/fire_icons/fire_icon_6.png'});
+
+
 // Use this link to get the geojson data
 var wildfirelink = "static/data/fire_temp_counties.geojson";
-// var tempslink = "https://raw.githubusercontent.com/Esri/gis-tools-for-hadoop/master/samples/data/counties-data/california-counties.json";
 
 // Grabbing our GeoJSON data
 d3.json(wildfirelink, function(wildfireData) {
 
-  // Function that will determine the size of the marker
-  function markerSize(area) {
-    return Math.sqrt(area) / 3;
-  };
-  // Function that will determine the color of the marker
-  function chooseColor(area) {
+  // Function that will determine the color of the icon
+  function fireIcon(area) {
     switch (true) {
     case area >= 50000:
-      return "darkred";
+      return fireIcon_1;
     case area >= 10000:
-      return "#F11D28";
+      return fireIcon_2;
     case area >= 5000:
-      return "#FD3A2D";
+      return fireIcon_3;
     case area >= 1000:
-      return "#FE612C";
+      return fireIcon_4;
     case area >= 500:
-      return "#FF872C";
+      return fireIcon_5;
     default:
-      return "#FFA12C";
+      return fireIcon_6;
     }
   }
+
   // Creating a geoJSON layer with all month data
   var all = L.geoJson(wildfireData, {
       pointToLayer: function (feature, latlng) {
-        return L.circleMarker(latlng,
-          // Set the style of the markers based on properties.mag
-          {
-            radius: markerSize(feature.properties.AcresBurned),
-            fillColor: chooseColor(feature.properties.AcresBurned),
-            fillOpacity: 0.7,
-            color: "black",
-            stroke: true,
-            weight: 0.5
-          }
+        return L.marker(latlng,
+        // Set the style of the icons based on properties.AcresBurned
+          {icon: fireIcon(feature.properties.AcresBurned)}
           );
       },
       // Called on each feature
       onEachFeature: function(feature, layer) {
         // Giving each feature a pop-up with information pertinent to it
-        layer.bindPopup("<h4>County: " + feature.properties.Counties + "</h4> <hr> <p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
+        layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: " + feature.properties.Counties + "</p><hr><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
       }
     }).addTo(wildfires);
     wildfires.addTo(myMap);
@@ -103,22 +109,14 @@ d3.json(wildfirelink, function(wildfireData) {
       return feature.properties.Month === "January";
     },
       pointToLayer: function (feature, latlng) {
-        return L.circleMarker(latlng,
-          // Set the style of the markers based on properties.mag
-          {
-            radius: markerSize(feature.properties.AcresBurned),
-            fillColor: chooseColor(feature.properties.AcresBurned),
-            fillOpacity: 0.7,
-            color: "black",
-            stroke: true,
-            weight: 0.5
-          }
+        return L.marker(latlng,
+          {icon: fireIcon(feature.properties.AcresBurned)}
           );
       },
       // Called on each feature
       onEachFeature: function(feature, layer) {
         // Giving each feature a pop-up with information pertinent to it
-        layer.bindPopup("<h4>County: " + feature.properties.Counties + "</h4> <hr> <p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
+        layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: " + feature.properties.Counties + "</p><hr><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
       }
     }).addTo(wildfires);
     wildfires.addTo(myMap);
@@ -129,22 +127,14 @@ d3.json(wildfirelink, function(wildfireData) {
       return feature.properties.Month === "February";
     },
       pointToLayer: function (feature, latlng) {
-        return L.circleMarker(latlng,
-          // Set the style of the markers based on properties.mag
-          {
-            radius: markerSize(feature.properties.AcresBurned),
-            fillColor: chooseColor(feature.properties.AcresBurned),
-            fillOpacity: 0.7,
-            color: "black",
-            stroke: true,
-            weight: 0.5
-          }
+        return L.marker(latlng,
+          {icon: fireIcon(feature.properties.AcresBurned)}
           );
       },
       // Called on each feature
       onEachFeature: function(feature, layer) {
         // Giving each feature a pop-up with information pertinent to it
-        layer.bindPopup("<h4>County: " + feature.properties.Counties + "</h4> <hr> <p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
+        layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: " + feature.properties.Counties + "</p><hr><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
       }
     }).addTo(wildfires);
     wildfires.addTo(myMap);
@@ -155,23 +145,15 @@ d3.json(wildfirelink, function(wildfireData) {
       return feature.properties.Month === "March";
     },
     pointToLayer: function (feature, latlng) {
-        return L.circleMarker(latlng,
-          // Set the style of the markers based on properties.mag
-          {
-            radius: markerSize(feature.properties.AcresBurned),
-            fillColor: chooseColor(feature.properties.AcresBurned),
-            fillOpacity: 0.7,
-            color: "black",
-            stroke: true,
-            weight: 0.5
-          }
+        return L.marker(latlng,
+          {icon: fireIcon(feature.properties.AcresBurned)}
           );
       },
       // Called on each feature
       onEachFeature: function(feature, layer) {
         // Giving each feature a pop-up with information pertinent to it
-          layer.bindPopup("<h4>County: " + feature.properties.Counties + "</h4> <hr> <p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
-        }
+        layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: " + feature.properties.Counties + "</p><hr><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
+      }
       }).addTo(wildfires);
       wildfires.addTo(myMap);
     
@@ -181,22 +163,14 @@ d3.json(wildfirelink, function(wildfireData) {
       return feature.properties.Month === "April";
     },
       pointToLayer: function (feature, latlng) {
-        return L.circleMarker(latlng,
-          // Set the style of the markers based on properties.mag
-          {
-            radius: markerSize(feature.properties.AcresBurned),
-            fillColor: chooseColor(feature.properties.AcresBurned),
-            fillOpacity: 0.7,
-            color: "black",
-            stroke: true,
-            weight: 0.5
-          }
+        return L.marker(latlng,
+          {icon: fireIcon(feature.properties.AcresBurned)}
           );
       },
       // Called on each feature
       onEachFeature: function(feature, layer) {
         // Giving each feature a pop-up with information pertinent to it
-        layer.bindPopup("<h4>County: " + feature.properties.Counties + "</h4> <hr> <p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
+        layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: " + feature.properties.Counties + "</p><hr><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
       }
     }).addTo(wildfires);
     wildfires.addTo(myMap);
@@ -207,22 +181,14 @@ d3.json(wildfirelink, function(wildfireData) {
           return feature.properties.Month === "May";
         },
           pointToLayer: function (feature, latlng) {
-            return L.circleMarker(latlng,
-              // Set the style of the markers based on properties.mag
-              {
-                radius: markerSize(feature.properties.AcresBurned),
-                fillColor: chooseColor(feature.properties.AcresBurned),
-                fillOpacity: 0.7,
-                color: "black",
-                stroke: true,
-                weight: 0.5
-              }
+            return L.marker(latlng,
+              {icon: fireIcon(feature.properties.AcresBurned)}
               );
           },
           // Called on each feature
           onEachFeature: function(feature, layer) {
             // Giving each feature a pop-up with information pertinent to it
-            layer.bindPopup("<h4>County: " + feature.properties.Counties + "</h4> <hr> <p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
+            layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: " + feature.properties.Counties + "</p><hr><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
           }
         }).addTo(wildfires);
         wildfires.addTo(myMap);
@@ -233,22 +199,14 @@ d3.json(wildfirelink, function(wildfireData) {
       return feature.properties.Month === "June";
     },
       pointToLayer: function (feature, latlng) {
-        return L.circleMarker(latlng,
-          // Set the style of the markers based on properties.mag
-          {
-            radius: markerSize(feature.properties.AcresBurned),
-            fillColor: chooseColor(feature.properties.AcresBurned),
-            fillOpacity: 0.7,
-            color: "black",
-            stroke: true,
-            weight: 0.5
-          }
+        return L.marker(latlng,
+          {icon: fireIcon(feature.properties.AcresBurned)}
           );
       },
       // Called on each feature
       onEachFeature: function(feature, layer) {
         // Giving each feature a pop-up with information pertinent to it
-        layer.bindPopup("<h4>County: " + feature.properties.Counties + "</h4> <hr> <p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
+        layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: " + feature.properties.Counties + "</p><hr><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
       }
     }).addTo(wildfires);
     wildfires.addTo(myMap);
@@ -259,22 +217,14 @@ d3.json(wildfirelink, function(wildfireData) {
     return feature.properties.Month === "July";
   },
     pointToLayer: function (feature, latlng) {
-      return L.circleMarker(latlng,
-        // Set the style of the markers based on properties.mag
-        {
-          radius: markerSize(feature.properties.AcresBurned),
-          fillColor: chooseColor(feature.properties.AcresBurned),
-          fillOpacity: 0.7,
-          color: "black",
-          stroke: true,
-          weight: 0.5
-        }
+      return L.marker(latlng,
+        {icon: fireIcon(feature.properties.AcresBurned)}
         );
     },
     // Called on each feature
     onEachFeature: function(feature, layer) {
       // Giving each feature a pop-up with information pertinent to it
-      layer.bindPopup("<h4>County: " + feature.properties.Counties + "</h4> <hr> <p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
+      layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: " + feature.properties.Counties + "</p><hr><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
     }
   }).addTo(wildfires);
   wildfires.addTo(myMap);
@@ -285,22 +235,14 @@ d3.json(wildfirelink, function(wildfireData) {
       return feature.properties.Month === "August";
     },
       pointToLayer: function (feature, latlng) {
-        return L.circleMarker(latlng,
-          // Set the style of the markers based on properties.mag
-          {
-            radius: markerSize(feature.properties.AcresBurned),
-            fillColor: chooseColor(feature.properties.AcresBurned),
-            fillOpacity: 0.7,
-            color: "black",
-            stroke: true,
-            weight: 0.5
-          }
+        return L.marker(latlng,
+          {icon: fireIcon(feature.properties.AcresBurned)}
           );
       },
       // Called on each feature
       onEachFeature: function(feature, layer) {
         // Giving each feature a pop-up with information pertinent to it
-        layer.bindPopup("<h4>County: " + feature.properties.Counties + "</h4> <hr> <p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
+        layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: " + feature.properties.Counties + "</p><hr><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
       }
     }).addTo(wildfires);
     wildfires.addTo(myMap);
@@ -311,22 +253,14 @@ d3.json(wildfirelink, function(wildfireData) {
       return feature.properties.Month === "September";
     },
       pointToLayer: function (feature, latlng) {
-        return L.circleMarker(latlng,
-          // Set the style of the markers based on properties.mag
-          {
-            radius: markerSize(feature.properties.AcresBurned),
-            fillColor: chooseColor(feature.properties.AcresBurned),
-            fillOpacity: 0.7,
-            color: "black",
-            stroke: true,
-            weight: 0.5
-          }
+        return L.marker(latlng,
+          {icon: fireIcon(feature.properties.AcresBurned)}
           );
       },
       // Called on each feature
       onEachFeature: function(feature, layer) {
         // Giving each feature a pop-up with information pertinent to it
-        layer.bindPopup("<h4>County: " + feature.properties.Counties + "</h4> <hr> <p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
+        layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: " + feature.properties.Counties + "</p><hr><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
       }
     }).addTo(wildfires);
     wildfires.addTo(myMap);
@@ -337,22 +271,14 @@ d3.json(wildfirelink, function(wildfireData) {
       return feature.properties.Month === "October";
     },
       pointToLayer: function (feature, latlng) {
-        return L.circleMarker(latlng,
-          // Set the style of the markers based on properties.mag
-          {
-            radius: markerSize(feature.properties.AcresBurned),
-            fillColor: chooseColor(feature.properties.AcresBurned),
-            fillOpacity: 0.7,
-            color: "black",
-            stroke: true,
-            weight: 0.5
-          }
+        return L.marker(latlng,
+          {icon: fireIcon(feature.properties.AcresBurned)}
           );
       },
       // Called on each feature
       onEachFeature: function(feature, layer) {
         // Giving each feature a pop-up with information pertinent to it
-        layer.bindPopup("<h4>County: " + feature.properties.Counties + "</h4> <hr> <p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
+        layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: " + feature.properties.Counties + "</p><hr><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
       }
     }).addTo(wildfires);
     wildfires.addTo(myMap);
@@ -363,22 +289,14 @@ d3.json(wildfirelink, function(wildfireData) {
       return feature.properties.Month === "November";
     },
       pointToLayer: function (feature, latlng) {
-        return L.circleMarker(latlng,
-          // Set the style of the markers based on properties.mag
-          {
-            radius: markerSize(feature.properties.AcresBurned),
-            fillColor: chooseColor(feature.properties.AcresBurned),
-            fillOpacity: 0.7,
-            color: "black",
-            stroke: true,
-            weight: 0.5
-          }
+        return L.marker(latlng,
+          {icon: fireIcon(feature.properties.AcresBurned)}
           );
       },
       // Called on each feature
       onEachFeature: function(feature, layer) {
         // Giving each feature a pop-up with information pertinent to it
-        layer.bindPopup("<h4>County: " + feature.properties.Counties + "</h4> <hr> <p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
+        layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: " + feature.properties.Counties + "</p><hr><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
       }
     }).addTo(wildfires);
     wildfires.addTo(myMap);
@@ -389,95 +307,37 @@ d3.json(wildfirelink, function(wildfireData) {
       return feature.properties.Month === "December";
     },
       pointToLayer: function (feature, latlng) {
-        return L.circleMarker(latlng,
-          // Set the style of the markers based on properties.mag
-          {
-            radius: markerSize(feature.properties.AcresBurned),
-            fillColor: chooseColor(feature.properties.AcresBurned),
-            fillOpacity: 0.7,
-            color: "black",
-            stroke: true,
-            weight: 0.5
-          }
+        return L.marker(latlng,
+          {icon: fireIcon(feature.properties.AcresBurned)}
           );
       },
       // Called on each feature
       onEachFeature: function(feature, layer) {
         // Giving each feature a pop-up with information pertinent to it
-        layer.bindPopup("<h4>County: " + feature.properties.Counties + "</h4> <hr> <p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
+        layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: " + feature.properties.Counties + "</p><hr><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
       }
     }).addTo(wildfires);
     wildfires.addTo(myMap);
-
-  // Function to determine the color of each county based on their temp
-  function tempColor(temp) {
-    switch (true) {
-    case temp >= 85:
-      return "orangered";
-    case temp >= 80:
-      return "darkorange";
-    case temp >= 75:
-      return "orange";
-    case temp >= 70:
-      return "yellow";
-    case temp >= 65:
-      return "#FEFE69";
-    case temp >= 60:
-      return "#DDF969";      
-    default:
-      return "#A9F36A";
-    }
-  }
-  // Add temperature layer
-L.geoJson(wildfireData, {
-    pointToLayer: function (feature, latlng) {
-      return L.circleMarker(latlng,
-        // Set the style of the markers based on properties.mag
-        {
-          radius: 8,
-          fillColor: tempColor(feature.properties.Fahrenheit),
-          fillOpacity: 0.9,
-          color: "white",
-          stroke: true,
-          weight: 0.5
-        }
-        );
-    },
-  }).addTo(temps);
-  temps.addTo(myMap);
-
-  // var jul_temp = L.geoJson(wildfireData, {
-  //   filter: function(feature, layer) {
-  //     return feature.properties.Month === "July";
-  //   },
-  //   pointToLayer: function (feature, latlng) {
-  //     return L.circleMarker(latlng,
-  //       // Set the style of the markers based on properties.mag
-  //       {
-  //         radius: 8,
-  //         fillColor: tempColor(feature.properties.Fahrenheit),
-  //         fillOpacity: 0.9,
-  //         color: "white",
-  //         stroke: true,
-  //         weight: 0.5
-  //       }
-  //       );
-  //   },
-  // }).addTo(temps);
-  // temps.addTo(myMap);
 
    // Add legend
    var legend = L.control({position: "bottomright"});
    legend.onAdd = function() {
      var div = L.DomUtil.create("div", "info legend"),
      mag = [0, 500, 1000, 5000, 10000, 50000];
-     
-     div.innerHTML += "<h3>Acres Burned</h3>"
+     icons = ['https://raw.githubusercontent.com/zcheatle5/ca-wildfire-dashboard/main/fire_icons/fire_icon_6.png',
+        'https://raw.githubusercontent.com/zcheatle5/ca-wildfire-dashboard/main/fire_icons/fire_icon_5.png',
+        'https://raw.githubusercontent.com/zcheatle5/ca-wildfire-dashboard/main/fire_icons/fire_icon_4.png',
+        'https://raw.githubusercontent.com/zcheatle5/ca-wildfire-dashboard/main/fire_icons/fire_icon_3.png',
+        'https://raw.githubusercontent.com/zcheatle5/ca-wildfire-dashboard/main/fire_icons/fire_icon_2.png',
+        'https://raw.githubusercontent.com/zcheatle5/ca-wildfire-dashboard/main/fire_icons/fire_icon_1.png'
+      ]
+
+     div.innerHTML += "<h5 align='center'><b>Acres Burned</b></h5>"
  
      for (var i =0; i < mag.length; i++) {
        div.innerHTML += 
-       '<i style="background:' + chooseColor(mag[i] + 1) + '"></i> ' +
-           mag[i] + (mag[i + 1] ? '&ndash;' + mag[i + 1] + '<br>' : '+');
+      ("<img align='right' src="+ icons[i] +" height='25' width='20'>") +
+      mag[i] + (mag[i + 1] ? '&ndash;' + mag[i + 1] + '<br>' : '+');
        }
        return div;
      };
@@ -679,17 +539,4 @@ L.geoJson(wildfireData, {
       myMap.removeLayer(oct)
       myMap.removeLayer(nov)
     });
-
-
-
-
-
-
-
-
-
-
-
-
-
 });
