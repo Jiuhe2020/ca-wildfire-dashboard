@@ -18,7 +18,6 @@ var darkMap = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/{id}/tiles/{z
   accessToken: API_KEY
 });
 
-
 // Define a baseMaps object to hold the base layers
 var baseMaps = {
   "Light Map": lightMap,
@@ -61,7 +60,6 @@ var fireIcon_1 = new fireIcons({iconUrl: 'https://raw.githubusercontent.com/zche
     fireIcon_4 = new fireIcons({iconUrl: 'https://raw.githubusercontent.com/zcheatle5/ca-wildfire-dashboard/main/fire_icons/fire_icon_4.png'}),
     fireIcon_5 = new fireIcons({iconUrl: 'https://raw.githubusercontent.com/zcheatle5/ca-wildfire-dashboard/main/fire_icons/fire_icon_5.png'}),
     fireIcon_6 = new fireIcons({iconUrl: 'https://raw.githubusercontent.com/zcheatle5/ca-wildfire-dashboard/main/fire_icons/fire_icon_6.png'});
-
 
 // Use this link to get the geojson data
 var wildfirelink = "static/data/fire_temp_counties.geojson";
