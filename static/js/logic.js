@@ -67,7 +67,7 @@ var wildfirelink = "static/data/fire_temp_counties.geojson";
 // Grabbing our GeoJSON data
 d3.json(wildfirelink, function(wildfireData) {
 
-  // Function that will determine the color of the icon
+  // Function that will determine the color of the icon based on area burned
   function fireIcon(area) {
     switch (true) {
     case area >= 50000:
