@@ -5,7 +5,7 @@ var wildfires = L.layerGroup();
 var lightMap = L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}", {
   attribution: "© <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> © <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a> <strong><a href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a></strong>",
   tileSize: 512,
-  maxZoom: 18,
+  maxZoom: 20,
   zoomOffset: -1,
   id: "mapbox/streets-v11",
   accessToken: API_KEY
@@ -13,7 +13,7 @@ var lightMap = L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/
 
 var darkMap = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}", {
   attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"https://www.mapbox.com/\">Mapbox</a>",
-  maxZoom: 18,
+  maxZoom: 20,
   id: "dark-v10",
   accessToken: API_KEY
 });
@@ -96,7 +96,9 @@ d3.json(wildfirelink, function(wildfireData) {
       // Called on each feature
       onEachFeature: function(feature, layer) {
         // Giving each feature a pop-up with information pertinent to it
-        layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: " + feature.properties.Counties + "</p><hr><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
+        layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: "
+        + feature.properties.Counties + "</p><p>Temperature: "
+        + feature.properties.Fahrenheit + " F</p><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
       }
     }).addTo(wildfires);
     wildfires.addTo(myMap);
@@ -114,7 +116,9 @@ d3.json(wildfirelink, function(wildfireData) {
       // Called on each feature
       onEachFeature: function(feature, layer) {
         // Giving each feature a pop-up with information pertinent to it
-        layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: " + feature.properties.Counties + "</p><hr><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
+        layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: "
+        + feature.properties.Counties + "</p><p>Temperature: "
+        + feature.properties.Fahrenheit + " F</p><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
       }
     }).addTo(wildfires);
     wildfires.addTo(myMap);
@@ -132,7 +136,9 @@ d3.json(wildfirelink, function(wildfireData) {
       // Called on each feature
       onEachFeature: function(feature, layer) {
         // Giving each feature a pop-up with information pertinent to it
-        layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: " + feature.properties.Counties + "</p><hr><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
+        layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: "
+        + feature.properties.Counties + "</p><p>Temperature: "
+        + feature.properties.Fahrenheit + " F</p><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
       }
     }).addTo(wildfires);
     wildfires.addTo(myMap);
@@ -150,7 +156,9 @@ d3.json(wildfirelink, function(wildfireData) {
       // Called on each feature
       onEachFeature: function(feature, layer) {
         // Giving each feature a pop-up with information pertinent to it
-        layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: " + feature.properties.Counties + "</p><hr><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
+        layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: "
+        + feature.properties.Counties + "</p><p>Temperature: "
+        + feature.properties.Fahrenheit + " F</p><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
       }
       }).addTo(wildfires);
       wildfires.addTo(myMap);
@@ -168,7 +176,9 @@ d3.json(wildfirelink, function(wildfireData) {
       // Called on each feature
       onEachFeature: function(feature, layer) {
         // Giving each feature a pop-up with information pertinent to it
-        layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: " + feature.properties.Counties + "</p><hr><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
+        layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: "
+        + feature.properties.Counties + "</p><p>Temperature: "
+        + feature.properties.Fahrenheit + " F</p><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
       }
     }).addTo(wildfires);
     wildfires.addTo(myMap);
@@ -186,8 +196,10 @@ d3.json(wildfirelink, function(wildfireData) {
           // Called on each feature
           onEachFeature: function(feature, layer) {
             // Giving each feature a pop-up with information pertinent to it
-            layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: " + feature.properties.Counties + "</p><hr><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
-          }
+            layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: "
+        + feature.properties.Counties + "</p><p>Temperature: "
+        + feature.properties.Fahrenheit + " F</p><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
+      }
         }).addTo(wildfires);
         wildfires.addTo(myMap);
   
@@ -204,7 +216,9 @@ d3.json(wildfirelink, function(wildfireData) {
       // Called on each feature
       onEachFeature: function(feature, layer) {
         // Giving each feature a pop-up with information pertinent to it
-        layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: " + feature.properties.Counties + "</p><hr><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
+        layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: "
+        + feature.properties.Counties + "</p><p>Temperature: "
+        + feature.properties.Fahrenheit + " F</p><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
       }
     }).addTo(wildfires);
     wildfires.addTo(myMap);
@@ -222,8 +236,10 @@ d3.json(wildfirelink, function(wildfireData) {
     // Called on each feature
     onEachFeature: function(feature, layer) {
       // Giving each feature a pop-up with information pertinent to it
-      layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: " + feature.properties.Counties + "</p><hr><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
-    }
+      layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: "
+        + feature.properties.Counties + "</p><p>Temperature: "
+        + feature.properties.Fahrenheit + " F</p><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
+      }
   }).addTo(wildfires);
   wildfires.addTo(myMap);
 
@@ -240,7 +256,9 @@ d3.json(wildfirelink, function(wildfireData) {
       // Called on each feature
       onEachFeature: function(feature, layer) {
         // Giving each feature a pop-up with information pertinent to it
-        layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: " + feature.properties.Counties + "</p><hr><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
+        layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: "
+        + feature.properties.Counties + "</p><p>Temperature: "
+        + feature.properties.Fahrenheit + " F</p><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
       }
     }).addTo(wildfires);
     wildfires.addTo(myMap);
@@ -258,7 +276,9 @@ d3.json(wildfirelink, function(wildfireData) {
       // Called on each feature
       onEachFeature: function(feature, layer) {
         // Giving each feature a pop-up with information pertinent to it
-        layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: " + feature.properties.Counties + "</p><hr><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
+        layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: "
+        + feature.properties.Counties + "</p><p>Temperature: "
+        + feature.properties.Fahrenheit + " F</p><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
       }
     }).addTo(wildfires);
     wildfires.addTo(myMap);
@@ -276,7 +296,9 @@ d3.json(wildfirelink, function(wildfireData) {
       // Called on each feature
       onEachFeature: function(feature, layer) {
         // Giving each feature a pop-up with information pertinent to it
-        layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: " + feature.properties.Counties + "</p><hr><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
+        layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: "
+        + feature.properties.Counties + "</p><p>Temperature: "
+        + feature.properties.Fahrenheit + " F</p><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
       }
     }).addTo(wildfires);
     wildfires.addTo(myMap);
@@ -294,7 +316,9 @@ d3.json(wildfirelink, function(wildfireData) {
       // Called on each feature
       onEachFeature: function(feature, layer) {
         // Giving each feature a pop-up with information pertinent to it
-        layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: " + feature.properties.Counties + "</p><hr><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
+        layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: "
+        + feature.properties.Counties + "</p><p>Temperature: "
+        + feature.properties.Fahrenheit + " F</p><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
       }
     }).addTo(wildfires);
     wildfires.addTo(myMap);
@@ -312,7 +336,9 @@ d3.json(wildfirelink, function(wildfireData) {
       // Called on each feature
       onEachFeature: function(feature, layer) {
         // Giving each feature a pop-up with information pertinent to it
-        layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: " + feature.properties.Counties + "</p><hr><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
+        layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: "
+        + feature.properties.Counties + "</p><p>Temperature: "
+        + feature.properties.Fahrenheit + " F</p><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
       }
     }).addTo(wildfires);
     wildfires.addTo(myMap);
