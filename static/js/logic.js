@@ -45,7 +45,7 @@ L.control.layers(baseMaps, overlayMaps, {
   collapsed: false
 }).addTo(myMap);
 
-var countyLink = "calicounties.geojson";
+var countyLink = "static/data/calicounty.geojson";
 
 d3.json(countyLink, function(countyData) {
   L.geoJson(countyData, {
