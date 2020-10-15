@@ -1,5 +1,6 @@
 // Create layerGroups
 var wildfires = L.layerGroup();
+var counties = L.layerGroup();
 
 // Create tile layers
 var lightMap = L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}", {
@@ -27,13 +28,14 @@ var baseMaps = {
 // Create overlay object to hold the overlay layer
 var overlayMaps = {
   "Wild Fires": wildfires,
+  "Counties": counties
 };
 
 // Creating map object
 var myMap = L.map("map", {
   center: [36.7783, -119.4179],
   zoom: 8,
-  layers: [lightMap, wildfires]
+  layers: [lightMap, wildfires, counties]
 });
 
 // Create a layer control
@@ -42,6 +44,43 @@ var myMap = L.map("map", {
 L.control.layers(baseMaps, overlayMaps, {
   collapsed: false
 }).addTo(myMap);
+
+var countyLink = "calicounties.geojson";
+
+d3.json(countyLink, function(countyData) {
+  L.geoJson(countyData, {
+    style: {
+    opacity: 0.75,
+    weight: 2,
+    color: "#FFF",
+    fillColor: "#62B934",
+    fillOpacity: 0.8
+  }
+}).addTo(counties);
+counties.addTo(myMap);
+
+// function decideColor(temp) {
+  //   switch(true) {
+  //     case temp >= 90:
+  //       return "#1D2681";
+  //     case temp >= 80:
+  //       return "#1D4297";
+  //     case temp >= 70:
+  //       return "#1E66AD";
+  //     case temp >= 60:
+  //       return "#1D94C4";
+  //     case temp >= 50:
+  //       return "#47D2D3";
+  //     case temp >= 40:
+  //       return "#72E1C3";
+  //     case temp >= 30:
+  //       return "#A0ECC2";
+  //     default:
+  //       return "#CFF7D5";
+  //   }
+  // }
+  
+})
 
 // Create fire icons on the map
 var fireIcons = L.Icon.extend(
