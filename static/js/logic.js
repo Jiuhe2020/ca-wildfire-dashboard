@@ -156,7 +156,7 @@ d3.json(wildfirelink, function(wildfireData) {
       onEachFeature: function(feature, layer) {
         // Giving each feature a pop-up with information pertinent to it
         layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: "
-        + feature.properties.Counties + "</p><p>Temperature: "
+        + feature.properties.Counties + "</p><p>Avg County Temperature: "
         + feature.properties.Fahrenheit + " F</p><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
       }
     }).addTo(wildfires);
@@ -176,7 +176,7 @@ d3.json(wildfirelink, function(wildfireData) {
       onEachFeature: function(feature, layer) {
         // Giving each feature a pop-up with information pertinent to it
         layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: "
-        + feature.properties.Counties + "</p><p>Temperature: "
+        + feature.properties.Counties + "</p><p>Avg County Temperature: "
         + feature.properties.Fahrenheit + " F</p><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
       }
     }).addTo(wildfires);
@@ -196,7 +196,7 @@ d3.json(wildfirelink, function(wildfireData) {
       onEachFeature: function(feature, layer) {
         // Giving each feature a pop-up with information pertinent to it
         layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: "
-        + feature.properties.Counties + "</p><p>Temperature: "
+        + feature.properties.Counties + "</p><p>Avg County Temperature: "
         + feature.properties.Fahrenheit + " F</p><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
       }
       }).addTo(wildfires);
@@ -216,7 +216,7 @@ d3.json(wildfirelink, function(wildfireData) {
       onEachFeature: function(feature, layer) {
         // Giving each feature a pop-up with information pertinent to it
         layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: "
-        + feature.properties.Counties + "</p><p>Temperature: "
+        + feature.properties.Counties + "</p><p>Avg County Temperature: "
         + feature.properties.Fahrenheit + " F</p><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
       }
     }).addTo(wildfires);
@@ -236,7 +236,7 @@ d3.json(wildfirelink, function(wildfireData) {
           onEachFeature: function(feature, layer) {
             // Giving each feature a pop-up with information pertinent to it
             layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: "
-        + feature.properties.Counties + "</p><p>Temperature: "
+        + feature.properties.Counties + "</p><p>Avg County Temperature: "
         + feature.properties.Fahrenheit + " F</p><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
       }
         }).addTo(wildfires);
@@ -256,7 +256,7 @@ d3.json(wildfirelink, function(wildfireData) {
       onEachFeature: function(feature, layer) {
         // Giving each feature a pop-up with information pertinent to it
         layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: "
-        + feature.properties.Counties + "</p><p>Temperature: "
+        + feature.properties.Counties + "</p><p>Avg County Temperature: "
         + feature.properties.Fahrenheit + " F</p><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
       }
     }).addTo(wildfires);
@@ -276,7 +276,7 @@ d3.json(wildfirelink, function(wildfireData) {
     onEachFeature: function(feature, layer) {
       // Giving each feature a pop-up with information pertinent to it
       layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: "
-        + feature.properties.Counties + "</p><p>Temperature: "
+        + feature.properties.Counties + "</p><p>Avg County Temperature: "
         + feature.properties.Fahrenheit + " F</p><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
       }
   }).addTo(wildfires);
@@ -296,7 +296,7 @@ d3.json(wildfirelink, function(wildfireData) {
       onEachFeature: function(feature, layer) {
         // Giving each feature a pop-up with information pertinent to it
         layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: "
-        + feature.properties.Counties + "</p><p>Temperature: "
+        + feature.properties.Counties + "</p><p>Avg County Temperature: "
         + feature.properties.Fahrenheit + " F</p><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
       }
     }).addTo(wildfires);
@@ -316,7 +316,7 @@ d3.json(wildfirelink, function(wildfireData) {
       onEachFeature: function(feature, layer) {
         // Giving each feature a pop-up with information pertinent to it
         layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: "
-        + feature.properties.Counties + "</p><p>Temperature: "
+        + feature.properties.Counties + "</p><p>Avg County Temperature: "
         + feature.properties.Fahrenheit + " F</p><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
       }
     }).addTo(wildfires);
@@ -336,7 +336,7 @@ d3.json(wildfirelink, function(wildfireData) {
       onEachFeature: function(feature, layer) {
         // Giving each feature a pop-up with information pertinent to it
         layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: "
-        + feature.properties.Counties + "</p><p>Temperature: "
+        + feature.properties.Counties + "</p><p>Avg County Temperature: "
         + feature.properties.Fahrenheit + " F</p><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
       }
     }).addTo(wildfires);
@@ -356,7 +356,7 @@ d3.json(wildfirelink, function(wildfireData) {
       onEachFeature: function(feature, layer) {
         // Giving each feature a pop-up with information pertinent to it
         layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: "
-        + feature.properties.Counties + "</p><p>Temperature: "
+        + feature.properties.Counties + "</p><p>Avg County Temperature: "
         + feature.properties.Fahrenheit + " F</p><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
       }
     }).addTo(wildfires);
@@ -376,7 +376,7 @@ d3.json(wildfirelink, function(wildfireData) {
       onEachFeature: function(feature, layer) {
         // Giving each feature a pop-up with information pertinent to it
         layer.bindPopup("<h5>Location: " + feature.properties.Location + "</h5><hr><p>County: "
-        + feature.properties.Counties + "</p><p>Temperature: "
+        + feature.properties.Counties + "</p><p>Avg County Temperature: "
         + feature.properties.Fahrenheit + " F</p><p>Acres Burned: " + feature.properties.AcresBurned + "</p>");
       }
     }).addTo(wildfires);
