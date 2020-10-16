@@ -30,7 +30,7 @@
   
 ## Extract, Transform, Load (ETL) Phase
 
-  ### Part I - Data Extraction and Cleaning
+  ### Part I - Data Extraction and Munging
   1. Utilized Pandas to clean the California Fire Incidents csv to filter for 2019 data and remove unwanted columns.
   2. Convert csv files into GeoJSON.
   2. Used Excel to prepare the Wildfires and Temps csv for import into PostgreSQL.
