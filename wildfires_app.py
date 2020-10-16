@@ -40,8 +40,8 @@ app.config['JSON_SORT_KEYS'] = False
 def index():
     """Serve homepage template"""
     return render_template('index.html')
-    
 
+    
 @app.route("/api/v1.0/wildfire_names")
 def wildfire_names():
     """List all wildfire names."""
@@ -66,17 +66,17 @@ def wildfires_data():
 
     """Return a list of wildfire data"""
     # Query all 2019 wildfires
-    results = session.query(Wildfire.wildfire_name, Wildfire.fire_id,Wildfire.acres_burned, Wildfire.year, Temp.month_name, Temp.fahrenheit, Wildfire.state, Wildfire.counties, Wildfire.location, Wildfire.latitude, Wildfire.longitude).join(Wildfire).all()
+    results = session.query(Wildfire.wildfire_name, Wildfire.fire_id, Wildfire.year, Temp.month_name, Temp.fahrenheit, Wildfire.state, Wildfire.counties, 
+    Wildfire.location, Wildfire.latitude, Wildfire.longitude, Wildfire.start_datetime, Wildfire.extinguished_datetime, Wildfire.duration_days, Wildfire.acres_burned).join(Wildfire).all()
 
     session.close()
 
     # Create a dictionary from the row data and append to a list of all_wildfires
     all_wildfires = []
-    for wildfire_name, fire_id, acres_burned, year, month_name, fahrenheit, state, counties, location, latitude, longitude in results:
+    for wildfire_name, fire_id, year, month_name, fahrenheit, state, counties, location, latitude, longitude, start_datetime, extinguished_datetime, duration_days, acres_burned in results:
         wildfire_dict = {}
         wildfire_dict["wildfire_name"] = wildfire_name
         wildfire_dict["fire_id"] = fire_id
-        wildfire_dict["acres_burned"] = acres_burned
         wildfire_dict["year"] = year
         wildfire_dict["month"] = month_name
         wildfire_dict["average_temperature(F)"] = fahrenheit
@@ -85,23 +85,13 @@ def wildfires_data():
         wildfire_dict["location"] = location
         wildfire_dict["latitude"] = latitude
         wildfire_dict["longitude"] = longitude
+        wildfire_dict["start_date"] = start_datetime
+        wildfire_dict["extinguished_date"] = extinguished_datetime
+        wildfire_dict["fire_duration(days)"] = duration_days
+        wildfire_dict["acres_burned"] = acres_burned
         all_wildfires.append(wildfire_dict)
 
     return jsonify(all_wildfires)
-
-@app.route("/api/v1.0/wildfire_data/<wildfire_name>")
-def wildfire_search_by__name(wildfire_name):
-    """Fetch the wildfire data by name who matches
-       the path variable supplied by the user, or a 404 if not."""
-   
-    canonicalized = wildfire_name.replace(" ", "").lower()
-    for fire in Wildfire:
-        search_term = fire["wildfire_name"].replace(" ", "").lower()
-
-        if search_term == canonicalized:
-            return jsonify(fire)
-
-    return jsonify({"error": "Character not found."}), 404
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -27,7 +27,8 @@ create table wildfires (
 	latitude numeric,
 	longitude numeric,
 	start_datetime timestamp,
-	extinguished_datetime timestamp
+	extinguished_datetime timestamp,
+	duration_days int
 );
 
 
