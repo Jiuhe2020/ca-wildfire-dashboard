@@ -1,0 +1,265 @@
+fire_id,county_id,month_number,year,state,wildfire_name,acres_burned,counties,location,latitude,longitude,start_datetime,extinguished_datetime,duration_days
+1581,12,1,2019,CA,Pilot Fire,30,Humboldt,"Pilot Ridge Rd & USFS Route 1, southwest of Willow Creek",40.61805556,-123.6755556,2019-01-01T14:14:00Z,2019-01-15T10:38:00Z,13
+1630,4,4,2019,CA,Cana Fire,10,Butte,"Off Hamilton Nord Cana Hwy & Cana Hwy, northeast of Chico",39.83958,-121.957,2019-04-30T12:20:00Z,2019-05-08T08:47:00Z,7
+1504,15,4,2019,CA,Woody Fire,115,Kern,"Woody Rd & Horseshoe Ranch Rd, northeast of Bakersfield",35.65189,-118.92545,2019-04-30T18:37:00Z,2019-05-08T08:47:00Z,7
+1482,16,4,2019,CA,York Fire,161,Kings,"Hwy 41 and York Ave, 13 miles south of Avenal (Kings County)",35.81778,-120.09715,2019-04-28T22:20:00Z,2019-06-24T11:45:00Z,56
+1580,33,4,2019,CA,Girasol Fire,30,Riverside,"Hwy 111 and Tramway Rd, Palm Springs",0,0,2019-04-09T22:18:00Z,2019-04-10T10:23:00Z,0
+1556,4,5,2019,CA,Meridian Fire,50,Butte,"Off Munjar Rd, north of Chico",39.85484,-121.905,2019-05-01T16:46:00Z,2019-05-08T08:47:00Z,6
+1501,10,5,2019,CA,Hill Fire,121,Fresno," S. Hills Valley Road, north of Orange Cove",36.66909,-119.3046,2019-05-29T17:18:00Z,2019-06-05T15:07:00Z,6
+1414,15,5,2019,CA,Refuge Fire,2500,Kern,"off Twisselmen Road, in the Kern National Wildlife Refuge,15 miles west of Delano",35.72057,-119.62762,2019-05-07T15:47:00Z,2019-05-09T09:37:00Z,1
+1479,15,5,2019,CA,Vulcan Fire,172,Kern,Off Highway 166 at Wind Wolves Preserve,35.03855,-119.19454,2019-05-03T15:04:00Z,2019-05-08T08:48:00Z,4
+1539,31,5,2019,CA,Sugar Fire,65,Placer,"Sugar Pine Road and Big Reservoir Lane, northeast of Foresthill",39.11536,-120.76088,2019-05-10T14:14:00Z,2019-05-24T14:28:00Z,14
+1498,33,5,2019,CA,Shady Fire,130,Riverside,"off Airport Boulevard and Shady Lane in Thermal, southwest of Coachella",33.650237,-116.172534,2019-05-18T22:53:00Z,2019-05-24T14:23:00Z,5
+1548,33,5,2019,CA,66 Fire,55,Riverside,Off Avenue 66 in Thermal,33.57039,-116.1466,2019-05-29T21:06:00Z,2019-06-24T11:46:00Z,25
+1561,33,5,2019,CA,Diversion Fire,45,Riverside,"Near the Intersection of Highway 95 and 2nd Avenue, in Blythe",33.69078,-114.57265,2019-05-30T12:41:00Z,2019-06-03T08:48:00Z,3
+1587,33,5,2019,CA,Foothill Fire,26,Riverside,"Off Foothill Avenue & Orange Avenue, in Nuevo",33.81678,-117.18194,2019-05-20T13:50:00Z,2019-05-24T14:23:00Z,4
+1597,37,5,2019,CA,Border Fire,22,San Diego,off Tin Can Canyon along the border in Otay Mesa,32.557566,-116.8663,2019-05-13T18:46:00Z,2019-05-19T09:26:00Z,5
+1428,40,5,2019,CA,Belmont Fire,835,San Luis Obispo,"Belmont & Costa Mesa Rd, In California Valley",35.30759,-119.96498,2019-05-29T17:10:00Z,2019-06-03T08:44:00Z,4
+1491,43,5,2019,CA,Canyon Fire,144,Santa Clara,"Off Del Puerto Canyon Rd & Diablo Grande Pkwy, west of Patterson",37.45899,-121.22093,2019-05-30T16:19:00Z,2019-06-11T14:40:00Z,11
+1542,52,5,2019,CA,Paskenta Fire,63,Tehama,"Paskenta Rd and Canal View Road, northwest of Corning",39.98097,-122.30737,2019-05-20T10:57:00Z,2019-05-24T14:23:00Z,4
+1579,1,6,2019,CA,Mountain Fire,30,Alameda,off Grant Line Rd and Mountain House Rd,37.75427,-121.57382,2019-06-21T14:42:00Z,2019-06-24T11:06:00Z,2
+1610,4,6,2019,CA,32 Fire,17,Butte,Humboldt Road and Highway 32,39.76242,-121.73659,2019-06-15T15:29:00Z,2019-06-24T11:06:00Z,8
+1619,4,6,2019,CA,Mayberry Fire ,12,Butte,"Off Craig Access Road, Near Lake Oroville ",39.32889,-121.23431,2019-06-29T22:07:59Z,2019-06-29T18:20:00Z,-1
+1596,7,6,2019,CA,Willow Fire,23,Contra Costa,"Highway 4 and Willow Pass Rd, 2 miles west of Bay Point",38.02503,-121.9763,2019-06-06T14:24:00Z,2019-06-11T14:47:00Z,5
+1465,24,6,2019,CA,Merced Fire ,210,Merced,"Off of Merced Fall Road and La Grange Road, East of Snelling",37.312877,-120.242411,2019-06-29T15:09:52Z,2019-07-02T15:51:00Z,3
+1411,27,6,2019,CA,Lonoak Fire,2546,Monterey,"Lonoak Rd & Airline Hwy, East of King City  ",36.28426,-120.94771,2019-06-26T09:18:22Z,2019-06-26T18:02:00Z,0
+1563,27,6,2019,CA,Ardo Fire,43,Monterey,near San Ardo,35.97059,-120.88241,2019-06-12T17:23:00Z,2019-06-17T08:46:00Z,4
+1555,28,6,2019,CA,Ink Fire,50,Napa,"Pope Valley Rd, northeast of Calistoga",38.63047,-122.47282,2019-06-08T14:37:00Z,2019-06-17T08:46:00Z,8
+1632,29,6,2019,CA,Long Fire,2,Nevada,"Off of  Long Point Road and Old Mill Road, Southeast of Camptonville in Nevada County ",39.40972222,-121.0005556,2019-06-28T15:03:04Z,2019-06-28T17:33:00Z,0
+1489,31,6,2019,CA,Dyer Fire,148,Placer,"Watt Ave & Dyer Road, northeast of Rio Linda",38.73817,-121.39419,2019-06-26T22:43:07Z,2019-06-27T08:26:00Z,0
+1586,31,6,2019,CA,Watt Fire,27,Placer,Watt Ave near Baseline Road ,38.75263,-121.39259,2019-06-07T12:59:00Z,2019-06-11T14:50:00Z,4
+1437,33,6,2019,CA,Jerry Fire,525,Riverside,"off Gilman Springs Road, between Highway 60 and Jack Rabbit Trail",33.919507,-117.103765,2019-06-21T13:02:00Z,2019-06-24T11:43:00Z,2
+1463,33,6,2019,CA,Wolf Fire ,214,Riverside,"Off of Lamb Canyon Road and California Avenue, Southeast of Beaumont",33.911,-116.980528,2019-06-29T12:54:13Z,2019-06-30T15:51:00Z,1
+1603,33,6,2019,CA,Nuevo Fire,20,Riverside,Nuevo Road and Menifee Road,33.80493,-117.15738,2019-06-27T16:14:25Z,2019-06-27T17:36:00Z,0
+1502,37,6,2019,CA,Weisgarber Fire,120,San Diego,"one mile west of the DeLuz gate, Camp Pendleton",33.39684,-117.29665,2019-06-20T14:56:00Z,2019-06-21T14:22:00Z,0
+1585,37,6,2019,CA,Otay Fire,28,San Diego,"East of the Lower Otay Reservoir, East of Chula Vista",32.62305556,-116.9141667,2019-06-29T11:11:55Z,2019-06-30T16:50:00Z,1
+1616,37,6,2019,CA,Pauma Fire,15,San Diego,Highway 76 and Pauma Valley Road ,33.30267,-116.97772,2019-06-10T14:25:00Z,2019-06-24T11:44:00Z,13
+1420,40,6,2019,CA,McMillan Fire,1764,San Luis Obispo,"Highway 46 East and McMillan Canyon Road, North of Shandon",35.66318,-120.41128,2019-06-12T12:48:00Z,2019-06-24T10:25:00Z,11
+1425,40,6,2019,CA,Boulder Fire,1127,San Luis Obispo,"off Highway 58 and Boulder Creek Road, California Valley",35.343761,-119.913717,2019-06-05T10:49:00Z,2019-06-11T14:49:00Z,6
+1503,40,6,2019,CA,Bitter Fire ,120,San Luis Obispo,Bitterwater Road East of Paso Robles,35.57376,-120.11738,2019-06-10T11:55:00Z,2019-06-11T17:18:00Z,1
+1466,43,6,2019,CA,Malech Fire,210,Santa Clara,"Malech Rd & Bailey Rd, South San Jose",37.21638,-121.70768,2019-06-09T14:29:00Z,2019-06-11T17:17:00Z,2
+1570,43,6,2019,CA,Calaveras Fire ,35,Santa Clara,Calaveras Road and Weller Road East of Milpitas,37.44422,-121.84082,2019-06-10T15:16:00Z,2019-06-17T08:46:00Z,6
+1609,43,6,2019,CA,Mines Fire,17,Santa Clara,Mines Road and Turner Gulch in the San Antone Valley. ,37.494136,-121.534827,2019-06-26T18:06:54Z,2019-06-27T08:48:00Z,0
+1517,45,6,2019,CA,Trinity Fire,90,Shasta,"Trinity Alps Vista Road and Bland Road, southwest of Ono",40.41404,-122.66779,2019-06-26T15:35:00Z,2019-06-26T06:00:00Z,-1
+1468,47,6,2019,CA,Lumgrey Fire,207,Siskiyou,"off Highway 96 and Lumgrey Road, West of Gottsville",39.28926,-121.85906,2019-06-17T17:50:00Z,2019-06-24T16:56:00Z,6
+1611,47,6,2019,CA,Rocky Fire,17,Siskiyou,"Rocky Rd and Harry Cash Rd, 9 miles east of Grenada ",41.64895,-122.35962,2019-06-14T16:14:00Z,2019-06-17T10:39:00Z,2
+1629,47,6,2019,CA,IronGate Fire,10,Siskiyou,"Deer Run Road, east of Iron Gate Reservoir",41.94622,-122.40157,2019-06-16T20:33:00Z,2019-06-21T14:23:00Z,4
+1595,48,6,2019,CA,Nelson Fire ,24,Solano,Cordelia Road and Link Road ,38.21416,-122.12214,2019-06-07T12:59:00Z,2019-06-17T08:49:00Z,9
+1416,50,6,2019,CA,Rock Fire,2422,Stanislaus,"Del Puerto Canyon Rd, east of Patterson  ",37.46577,-121.28312,2019-06-26T08:54:24Z,2019-06-27T19:06:00Z,1
+1435,50,6,2019,CA,Stuhr Fire,600,Stanislaus,"Interstate 5 and Pete Miller Road, southwest of Newman",37.25988,-121.09375,2019-06-07T16:55:00Z,2019-06-11T17:14:00Z,4
+1422,51,6,2019,CA,West Butte Fire,1350,Sutter,"North Butte Rd & West Butte Rd, northeast of Colusa",39.28926,-121.85906,2019-06-08T14:37:00Z,2019-06-17T15:16:00Z,9
+1560,52,6,2019,CA,Paskenta Fire,46,Tehama,"off Corning Road and Paskenta Road, West of Corning",39.97083,-122.48277,2019-06-22T03:12:00Z,2019-06-24T11:43:00Z,2
+1455,54,6,2019,CA,Citrus Fire,257,Tulare,"Off Rd 256 & Ave 220, east of Strathmore",36.18479,-118.99229,2019-06-02T16:12:00Z,2019-06-11T14:48:00Z,8
+1486,54,6,2019,CA,Spruce Fire,155,Tulare,"Off Spruce Rd & Myer Dr, east of Exeter",36.28001,-119.10974,2019-06-01T15:49:00Z,2019-06-11T14:48:00Z,9
+1558,54,6,2019,CA,Springs Fire,47,Tulare,Off Mountain Road 56 East of Ducor ,35.89593,-118.94106,2019-06-10T17:51:00Z,2019-06-11T17:18:00Z,0
+1574,54,6,2019,CA,Yokohl Fire,33,Tulare,off of Yokohl Drive in Tulare County ,36.23012,-118.85712,2019-06-03T12:18:00Z,2019-06-04T16:03:00Z,1
+1593,54,6,2019,CA,Bear Fire,25,Tulare,Off of Balch Park Rd in Springville,36.14246,-118.80582,2019-06-03T12:18:00Z,2019-06-11T14:48:00Z,8
+1413,57,6,2019,CA,Sand Fire,2512,Yolo,Guinda,38.88978,-122.23922,2019-06-08T14:50:00Z,2019-06-17T10:40:00Z,8
+1530,58,6,2019,CA,Scott Fire,80,Yuba,"off Scott Forbes Rd, 5 miles east of Browns Valley",39.24678,-121.32399,2019-06-25T13:51:09Z,2019-06-25T13:50:00Z,-1
+1531,58,6,2019,CA,Scott Fire,80,Yuba,"off Scott Forbes Rd, 5 miles east of Browns Valley",39.24678,-121.32399,2019-06-24T11:57:00Z,2019-06-24T18:30:00Z,0
+1534,58,6,2019,CA,Levee Fire,70,Yuba,"Highway 20 & E 22nd Street, in Marysville",39.15641,-121.56363,2019-06-08T13:07:00Z,2019-06-17T08:34:00Z,8
+1391,1,7,2019,CA,Mid Fire,22,Alameda,"patterson pass and mid way, eastern",37.093243,-121.586846,2019-07-12T18:40:09Z,2019-07-12T19:20:00Z,0
+1592,1,7,2019,CA,Bikeway Fire,25,Alameda,"Christensen Road, Near Bethany Reservoir ",37.469,-121.3697,2019-07-05T09:46:01.973Z,2019-07-05T03:20:00Z,-1
+1628,4,7,2019,CA,Moms Fire ,10,Butte,"Off Moms Lane and Lone Tree Road, South of Orville ",39.423833,-121.579738,2019-07-23T14:41:00Z,,0
+1387,5,7,2019,CA,Whiskey Fire,27,Calaveras,near the Whiskey Creek Day Use area of New Hogan Lake,38.115224,-120.78068,2019-07-18T18:31:00Z,2019-07-20T08:56:00Z,1
+1594,7,7,2019,CA,Fellow Fire,24,Contra Costa, Franklin Canyon Rd. ,37.99837,-122.16201,2019-07-05T13:33:56Z,2019-07-05T14:58:00Z,0
+1617,9,7,2019,CA,Carson Fire,13,El Dorado,"Northeast of Placerville in the community of Camino, off of Shadow Ridge Road",38.757636,-120.75664,2019-07-30T19:27:46Z,2019-07-31T06:47:00Z,0
+1441,15,7,2019,CA,Mesa Fire ,448,Kern,"near Quail Dr and Bobcat Dr in the Kern River Valley, South of Lake Isabela",35.60989,-118.41204,2019-07-31T17:13:53Z,,0
+1467,15,7,2019,CA,Tejon Fire,208,Kern,"  I 5 and Diger Rd, South of Bakersfield",34.9008333,-118.9183333,2019-07-21T15:30:17Z,,0
+1453,18,7,2019,CA,Snowstorm Fire,263,Lassen,"Snowstorm Rd, south of Ravendale",40.679318,-120.392768,2019-07-05T16:37:04Z,2019-07-06T07:49:00Z,0
+1475,18,7,2019,CA,Doyle Fire,193,Lassen,"Off Old Highway and Cowboy Joe Road, Northwest of Doyle",40.072739,-120.158273,2019-07-14T14:02:31Z,2019-07-16T09:00:00Z,1
+1464,20,7,2019,CA,Madera Fire ,213,Madera,"Off Road 33 and Highway 145, Bonadelle",37.016944,-119.934167,2019-07-15T18:19:31Z,2019-07-16T06:49:00Z,0
+1378,22,7,2019,CA,Valley Fire,149,Mariposa," Old Hwy and Guadalupe, East of Mariposa",37.241427,-120.027731,2019-07-21T12:01:40Z,,0
+1458,22,7,2019,CA,Lake Fire,244,Mariposa,"McSwain Entrance and Lake McClure Rd, Hornitos",37.524378,-120.296551,2019-07-08T15:30:14Z,,0
+1497,23,7,2019,CA,Usal Fire,130,Mendocino,"Usal Creek and Usal Rd, west of Leggett",39.831762,-123.846013,2019-07-27T23:36:00Z,,0
+1398,25,7,2019,CA,Tucker Fire,14217,Modoc,"Hwy 139 and Tucker Butte Rd, 6 miles SW of Clear Lake Reservoir",41.79591,-121.260305,2019-07-28T15:58:00Z,2019-08-11T12:16:00Z,13
+1500,25,7,2019,CA,Goose 2 Fire,128,Modoc,"Off Highway 395 and South Willow Ranch Road, West of Fort Bidwell ",41.909,-120.306,2019-07-17T16:13:41Z,2019-07-20T09:05:00Z,2
+1447,27,7,2019,CA,Lake Fire,316,Monterey,"near Lake San Antonio, Jolon Road and New Pleyto Road, Lockwood ",35.908333,-120.984167,2019-07-29T15:43:48Z,,0
+1451,27,7,2019,CA,Mill Fire,280,Monterey,"In Los Padres National Forest, West of Fort Hunter Liggett ",36.008889,-121.466944,2019-07-30T13:28:17Z,2019-08-12T08:20:00Z,12
+1477,27,7,2019,CA,Sargent Fire,190,Monterey,"Sargent Canyon Road and Sheep Canyon, San Ardo Oil Fields",35.95191,-120.8092,2019-07-09T21:43:36Z,2019-07-10T16:04:00Z,0
+1540,28,7,2019,CA,Canyon Fire,64,Napa,Hwy 128 and Wragg Canyon Rd 16 miles east of St. Helena,38.481258,-122.143942,2019-07-22T15:05:34Z,,0
+1511,33,7,2019,CA,Orange fire,96,Riverside,27000 block of Orange Avenue in Nuevo,33.8128372,-117.1228851,2019-07-13T10:36:00Z,2019-07-13T15:13:00Z,0
+1524,33,7,2019,CA,Meadow Fire,81,Riverside,Highway 371 near Lake Riverside Drive,33.514658,-116.7884,2019-07-16T13:45:43Z,2019-07-17T21:29:00Z,1
+1529,33,7,2019,CA,Lincoln Fire,80,Riverside,"Lincoln St and Ave 66, Mecca, 6 miles south of Coachella",33.56938,-116.07896,2019-07-12T17:15:31Z,2019-07-17T10:00:00Z,4
+1602,33,7,2019,CA,Gibbel Fire ,20,Riverside,Off of Girard Street and Quiet Hills Drive ,33.69055556,-116.953889,2019-07-11T16:27:17Z,2019-07-11T08:26:00Z,-1
+1485,36,7,2019,CA,Star Fire,156,San Bernardino,"Chino Hils Parkway and Grand Avenue, Chino Hills",33.997528,-117.769766,2019-07-28T13:20:11Z,,0
+1523,36,7,2019,CA,Milpas Fire,81,San Bernardino,"Milpas Rd and Valley View Rd, 10 miles SE of Apple Valley",34.42386,-117.10318,2019-07-22T19:45:27Z,,0
+1389,37,7,2019,CA,Vista Fire,25,San Diego,Off Vista De La Montana in the Dehesa area,32.794768,-116.839743,2019-07-17T17:42:04Z,2019-07-18T15:58:00Z,0
+1488,37,7,2019,CA,Dehesa Fire,150,San Diego,"Dehesa Road and Slone Canyon Road, Dehesa",32.767649,-116.796032,2019-07-28T19:51:55Z,,0
+1508,37,7,2019,CA,Border Fire,100,San Diego,Off of Cottonwood Creak and Barrett Truck Trail along the US/Mexico border,32.566389,-116.7525,2019-07-12T13:20:39Z,2019-07-15T17:10:00Z,3
+1449,39,7,2019,CA,Hollow Fire,283,San Joaquin,"West Corral Hollow Road, Carnegie State Vehicular Recreational Area, southwest of Tracy",37.63206,-121.538382,2019-07-03T15:34:12Z,2019-07-05T07:50:00Z,1
+1516,39,7,2019,CA,Whiskey Fire,90,San Joaquin,"west Lower Jones Road, west of the Community of Slough ",37.962557,-121.468074,2019-07-16T18:44:15Z,,0
+1427,40,7,2019,CA,Gillis Fire,974,San Luis Obispo,Gillis Canyon and South East of Shandon,35.63111111,-120.2691667,2019-07-08T16:44:08Z,2019-07-09T18:22:00Z,1
+1512,40,7,2019,CA,Thompson Fire ,95,San Luis Obispo,"Off Highway 166  and Highway 101, North of Santa Maria",35.004722,-120.435278,2019-07-24T20:09:59Z,,0
+1507,42,7,2019,CA,Range Fire,100,Santa Barbara,north of Lake Cachuma,34.665699,-119.94974,2019-07-28T22:39:05Z,2019-08-05T12:27:00Z,7
+1528,43,7,2019,CA,Sweigert Fire ,80,Santa Clara,"Off of Kahler Court and Felter Road, East of Milpitas",37.433192,-121.807258,2019-07-24T20:01:44Z,,0
+1533,43,7,2019,CA,Coyote Fire,74,Santa Clara,Northbound US 101 at Coyote Creek Golf Drive in San Jose,37.18904,-121.694968,2019-07-02T16:10:02Z,2019-07-02T18:32:00Z,0
+1557,43,7,2019,CA,Aborn Fire,47,Santa Clara,"Off Aborn Road and Murillo Avenue, East San Jose ",37.32555556,-121.7644444,2019-07-15T11:12:00Z,2019-07-15T18:19:00Z,0
+1386,45,7,2019,CA,Horse Fire,30,Shasta,"Blue Horse Rd and Saddle Trail, 2 miles NW of Olinda",40.463936,-122.435492,2019-07-12T19:08:54Z,,0
+1578,45,7,2019,CA,Ranch Fire,30,Shasta,Near Yolla Bolla Rd & Roaring Creek in Igo,40.41741,-122.767256,2019-07-05T14:46:33Z,2019-07-06T20:03:00Z,1
+1521,47,7,2019,CA,Tree Fire,83,Siskiyou,"Tree of Heaven Campground, east of Gottsville",41.834366,-122.656569,2019-07-27T10:15:00Z,,0
+1569,47,7,2019,CA,Community Fire,35,Siskiyou,Hwy 96 near the Klamath River Community Hall,41.838,-122.845,2019-07-27T10:15:00Z,,0
+1478,48,7,2019,CA,Marshview Fire,183,Solano,"Off Marshview Road and Highway 680, South of Cordelia ",38.158333,-122.118889,2019-07-24T12:28:45Z,,0
+1385,50,7,2019,CA,Rains Fire,35,Stanislaus,"Frank Raines Park on Del Puerto Canyon Road, west of Patterson",37.420988,-121.371276,2019-07-18T09:07:57Z,2019-07-18T10:29:00Z,0
+1469,50,7,2019,CA,Milton Fire ,202,Stanislaus,"Off of Milton Road and Highway 4, North of Oakdale ",37.944751,-120.84372,2019-07-15T10:49:00Z,2019-07-16T06:48:00Z,0
+1495,56,7,2019,CA,South Fire ,131,Ventura,Off of South Mountain Rd and Balcom Canyon Road East of Santa Paula,34.366111,-118.96,2019-07-14T11:45:00Z,2019-07-15T14:10:00Z,1
+1566,58,7,2019,CA,Far Fire,38,Yuba,"Camp Far West rd & Nisenan Ln, northeast of Wheatland",39.06066,-121.35014,2019-07-06T20:21:25Z,,0
+1459,1,8,2019,CA,Harte Fire,240,Alameda,"Central Pkwy and Croak Rd, 4 miles east of Dublin",37.708743,-121.841879,2019-08-09T15:09:50Z,,0
+1493,1,8,2019,CA,Patterson Fire,139,Alameda,"Patterson Pass and Midway Road, west of Tracy",37.71734,-121.55867,2019-08-21T17:56:05Z,2019-08-21T18:27:00Z,0
+1606,1,8,2019,CA,Carroll Fire,19,Alameda,eastbound 580 and North Flynn Road,37.718636,-121.657011,2019-08-31T12:55:15Z,2019-08-31T12:50:00Z,-1
+1599,6,8,2019,CA,Spring Fire ,20,Colusa,Off of Spring Valley Road and Highway 20,39.088333,-122.309167,2019-08-14T12:52:00Z,2019-08-14T18:51:00Z,0
+1429,7,8,2019,CA,Marsh Complex,757,Contra Costa,"Marsh Creek Rd and Morgan Territory Rd, southwest of Brentwood",37.908362,-121.872941,2019-08-03T03:16:00Z,2019-08-06T18:42:00Z,3
+1546,7,8,2019,CA,Sellers Fire,58,Contra Costa,"Sellers Ave and Delta Rd, 2 miles northeast of Brentwood",37.968494,-121.678172,2019-08-07T15:13:52Z,,0
+1568,9,8,2019,CA,Patterson Fire,35,El Dorado,"Patterson Drive, south of Placerville",38.652475,-120.826165,2019-08-15T17:47:43Z,2019-08-16T10:35:00Z,0
+1613,9,8,2019,CA,Greenstone Fire ,16,El Dorado,Off of Greenstone Road and Buck Mountain Road ,38.703889,-120.890556,2019-08-14T16:07:49Z,2019-08-14T18:52:00Z,0
+1583,15,8,2019,CA,Caliente Fire,29,Kern,"Caliente Bodfish Rd, east of Bakersfield",35.287373,-118.623651,2019-08-05T13:56:02Z,2019-08-06T18:43:00Z,1
+1601,17,8,2019,CA,Golf Fire,20,Lake,"Soda Bay Road and Golf Drive, northwest of Clearlake",38.99174,-122.7751,2019-08-08T14:55:59Z,2019-08-11T10:28:00Z,2
+1380,18,8,2019,CA,3-2 Willow (Previously H-1 Fire),107,Lassen,"Pittville Road and Sheep Flat Road, southeast of Fall River Mills",40.900458,-121.320838,2019-08-07T18:48:57Z,,0
+1409,18,8,2019,CA,R-1 Fire,3380,Lassen,"Hagata Canyon, east of Eagle Lake",40.593,-120.581,2019-08-28T19:48:14Z,2019-09-04T16:22:00Z,6
+1415,18,8,2019,CA,Long Valley Fire ,2438,Lassen,"Off Highway 395 and Red Rock Road, North of Hallelujah Junction",39.892222,-120.029722,2019-08-24T17:25:04Z,2019-08-27T09:01:00Z,2
+1426,18,8,2019,CA,W1 McDonald Fire,1020,Lassen,"Cold Springs Rd and McDonald Peak, 11 miles southeast of Madeline",40.943799,-120.275298,2019-08-08T18:42:41Z,2019-08-11T11:35:00Z,2
+1494,18,8,2019,CA,Horse Fire,131,Lassen,"Off Highway 139  and Horselake Road, North of Susanville",40.562,-120.544,2019-08-24T16:33:58Z,2019-08-27T10:44:00Z,2
+1496,18,8,2019,CA,R-1 Fire,130,Lassen,"Juniper Ridge Road and Juniper Tree Road, north of Ravendale",40.886677,-120.336977,2019-08-07T17:21:13Z,,0
+1484,19,8,2019,CA,Five Fire,156,Los Angeles,Off Interstate 5 & Templin Hwy,34.677864,-118.752395,2019-08-03T17:01:15Z,2019-08-05T12:25:00Z,1
+1505,19,8,2019,CA,West Fire ,105,Los Angeles,"off of 120th Street  West and Coppermill Road, Lancaster ",34.675542,-118.342239,2019-08-13T14:37:54Z,,0
+1371,22,8,2019,CA,Gaines Fire,1300,Mariposa,"Mt Gaines Rd and Bear Valley Rd, Bear Valley",37.536069,-120.177018,2019-08-16T14:11:02Z,,0
+1442,22,8,2019,CA,Hunter Fire,423,Mariposa,"Bear Valley Rd and Cotton Creek Rd, east of Snelling",37.532028,-120.208019,2019-08-15T15:15:56Z,,0
+1461,23,8,2019,CA,Moose Fire,225,Mendocino,Off Moose Rd & Bus McGall Rd northwest of Hopland,39.005262,-123.195306,2019-08-12T17:10:00Z,2019-08-17T18:15:00Z,5
+1506,25,8,2019,CA,Meadow Fire (Not a CAL FIRE incident),103,Modoc,"County Road 48 and Highway 395, northeast of Alturas",41.43783,-120.23976,2019-08-02T16:53:18Z,2019-08-02T21:39:00Z,0
+1393,33,8,2019,CA,Sage Fire,12,Riverside,"near the intersection of Sage Road and Highway 79, in Aguanga",33.463991,-116.914799,2019-08-27T11:33:56Z,2019-08-27T08:54:00Z,-1
+1513,33,8,2019,CA,Toro Fire ,94,Riverside,"26000 Block El Toro Road, North of Lake Elsinore",33.740219,-117.333728,2019-08-05T15:36:23Z,2019-08-06T18:42:00Z,1
+1526,33,8,2019,CA,Ivy Fire,80,Riverside,near Northbound Intestate 15 and Temescal Canyon,33.77777348,-117.487578,2019-08-25T10:58:28Z,2019-08-25T13:00:00Z,0
+1572,33,8,2019,CA,Yucca Fire,34,Riverside,Highway 371 cross of Yucca Road,33.4506,-116.857817,2019-08-22T19:31:10Z,2019-08-23T23:00:00Z,1
+1600,33,8,2019,CA,Radio Fire,20,Riverside,David Mountain Radio Road at David Mountain Road in Beaumont,33.909792,-117.004667,2019-08-12T10:53:10Z,2019-08-12T08:21:00Z,-1
+1519,34,8,2019,CA,Browns Fire,84,Sacramento,"Off Twin Cities Road and Clay Station Road, Northeast of Herald ",38.3525,-121.123611,2019-08-02T09:23:00Z,2019-08-02T14:03:00Z,0
+1554,34,8,2019,CA,Prairie Fire ,50,Sacramento,off White Rock Road and Prairie City Road ,38.622058,-121.114095,2019-08-02T14:45:00Z,2019-08-02T17:00:00Z,0
+1388,36,8,2019,CA,La Barisa Fire,26,San Bernardino,Off La Barisa Dr & Hwy 247 in Landers,34.202883,-116.4449,2019-08-03T17:22:51Z,2019-08-04T06:39:00Z,0
+1421,37,8,2019,CA,Border 8 Fire,1507,Mexico,"City of Tecate, southeast of San Diego ",32.573437,-116.658735,2019-08-16T06:14:55Z,2019-08-17T14:30:00Z,1
+1440,37,8,2019,CA,Caliente Fire,448,San Diego,"Off Airway Road and Caliente Ave, in San Ysidro ",32.575556,-117.026667,2019-08-01T14:53:15Z,2019-08-03T09:10:00Z,1
+1527,37,8,2019,CA,Border 9 Fire,80,San Diego,"Off of Marron Valley Road and Border Road, Southeast of Dulzura  ",32.57394,-116.760465,2019-08-15T16:24:24Z,2019-08-16T18:44:00Z,1
+1590,37,8,2019,CA,Border 10 Fire,25,Mexico,Mexico / California International border in the area east of the Otay port of entry.,32.557546,-116.873955,2019-08-25T16:15:15Z,2019-08-28T08:54:00Z,2
+1591,37,8,2019,CA,Border 10 Fire,25,San Diego,Mexico / California International border in the area east of the Otay port of entry.,32.557546,-116.873955,2019-08-25T16:15:15Z,2019-08-28T08:54:00Z,2
+1544,43,8,2019,CA,Bayliss Fire,60,Santa Clara,"Santa Teresa Blvd and Bayliss Drive, South San Jose",37.219717,-121.761974,2019-08-15T13:44:02Z,,0
+1567,43,8,2019,CA,Jamieson Fire,35,Santa Clara,at Jamieson Road and Cañada Road near Gilroy,37.034183,-121.45597,2019-08-25T13:06:49Z,,0
+1434,45,8,2019,CA,Mountain Fire,600,Shasta,"Bear Mountain Road and Dry Creek Road, north of Bella Vista",40.715556,-122.241944,2019-08-22T11:02:09Z,2019-08-26T17:00:00Z,4
+1483,45,8,2019,CA,Cottage Fire,156,Shasta,"Dersch Rd and Cottage Hill Dr, northeast of Anderson ",40.484329,-122.159393,2019-08-15T15:09:55Z,2019-08-17T18:43:00Z,2
+1559,45,8,2019,CA,Lower Fire,46,Shasta,Gas Point Rd & Lower Gas Point Rd in Igo,40.46968,-122.54364,2019-08-12T14:16:53Z,2019-08-13T16:15:00Z,1
+1577,45,8,2019,CA,Gilbert Fire,30,Shasta,"Highway 44 and Gilbert Drive, Palo Cedro, East of Redding",40.55924,-122.25409,2019-08-04T17:18:21Z,,0
+1522,48,8,2019,CA,Timm Fire ,81,Solano,"Off of Timm Road and Allendale Road, South of Winters ",38.455,-121.969167,2019-08-13T15:41:24Z,2019-08-13T18:00:00Z,0
+1430,54,8,2019,CA,Creek Fire,756,Tulare,"Dry Creek Dr and Lomitas Drive, east of Woodlake",36.40193,-119.030621,2019-08-31T15:31:59Z,,0
+1598,55,8,2019,CA,Preston Fire,21,Tuolumne,"10,000 Block Preston Lane, Jamestown",37.949747,-120.420058,2019-08-08T16:16:40Z,2019-08-08T17:12:00Z,0
+1573,57,8,2019,CA,Heavy Range Fire,33,Yolo,"Hammonton Smartsville Rd. and Kendal Rd, Beale Air Force Base",39.171091,-121.423281,2019-08-10T18:47:02Z,2019-08-10T15:07:00Z,-1
+1623,1,9,2019,CA,Mines Fire,11,Alameda,"Mines Road, Livermore",37.545167,-121.596667,2019-09-02T14:36:35Z,2019-09-02T19:13:00Z,0
+1626,3,9,2019,CA,Electra Fire,10,Amador,"Electra Road and Highway 49, east of Jackson",38.332083,-120.67131,2019-09-25T13:13:41Z,2019-09-25T17:00:00Z,0
+1439,4,9,2019,CA,Swedes Fire,496,Butte,"Swedes Flat Road and Oro Bangor Highway, east of Oroville",39.45296,-121.412619,2019-09-07T15:06:00Z,2019-09-13T19:00:00Z,6
+1448,4,9,2019,CA,Hwy Fire,300,Butte,"Off of Hwy 99 and Hwy 149, Southeast of Chico",39.622137,-121.693472,2019-09-28T17:48:10Z,2019-09-28T18:40:00Z,0
+1545,4,9,2019,CA,Forbestown Fire,58,Butte,"Forbestown Road and Hurleton Swedes Flat Road, east of Oroville ",39.470333,-121.412333,2019-09-06T15:18:52Z,2019-09-12T18:49:00Z,6
+1537,5,9,2019,CA,Lynette Fire,67,Calaveras,"By the intersection of Loera Hills Road on Paloma Road in Valley Springs, California.",38.20177,-120.827386,2019-09-22T18:25:56Z,,0
+1390,9,9,2019,CA,Chaparral Fire,22,El Dorado,Chaparral Drive and Latrobe Road in Latrobe,38.538467,-120.965105,2019-09-29T21:44:45Z,2019-09-29T21:35:00Z,-1
+1518,9,9,2019,CA,Country Fire,85,El Dorado,"Highway 193 and Penobscot Rd, east of Cool",38.898915,-120.946657,2019-09-03T14:57:31Z,2019-09-06T07:24:00Z,2
+1589,10,9,2019,CA,Frame Fire,25,Fresno,"Hwy 198 x Frame Rd, east of Monterey County Line",36.154184,-120.634179,2019-09-30T17:39:00Z,,0
+1399,14,9,2019,CA,Taboose Fire,10296,Inyo,south west of Big Pine and north west of Aberdeen,37.034,-118.345,2019-09-06T12:43:35Z,2019-11-21T16:09:00Z,76
+1417,14,9,2019,CA,Cow Fire,1975,Inyo,"Golden Trout Wilderness, Inyo National Forest",36.284,-118.228,2019-09-06T12:23:00Z,2019-11-21T16:08:00Z,76
+1549,17,9,2019,CA,Oak Fire,53,Lake,"Highway 29 and Cole Creek Road, South of Kelseyville",38.955024,-122.833831,2019-09-07T14:00:00Z,2019-09-08T07:00:00Z,0
+1584,17,9,2019,CA,Glass Fire,28,Lake,"Highway 29 and DNA Ridge Rock, Southwest of Clear Lake.",38.910498,-122.642572,2019-09-04T16:26:00Z,2019-09-05T10:03:00Z,0
+1454,18,9,2019,CA,R-6 Fire,260,Lassen,"North of Fredonyer Peak, southwest of Termo",44.734,-120.606,2019-09-06T13:20:00Z,2019-09-11T18:30:00Z,5
+1403,25,9,2019,CA,Lone Fire,5737,Modoc,"Pinnacle Lake, Doublehead Ranger district, Modoc National Forest",41.748,-121.056,2019-09-06T11:34:27Z,2019-09-13T07:19:00Z,6
+1406,26,9,2019,CA,Springs Fire,4840,Mono,"southeast of Lee Vining, CA",37.826,-118.872,2019-09-06T11:24:11Z,,0
+1538,27,9,2019,CA,Jolon Fire,66,Monterey,"Jolon Road and New Pleyto Road, Lockwood",35.906482,-120.992914,2019-09-01T16:35:55Z,2019-09-02T10:08:00Z,0
+1433,31,9,2019,CA,Baseline Fire ,604,Placer,"Baseline Road and Country Acres Lane, north of Rio Linda ",38.751648,-121.432636,2019-09-20T15:02:08Z,,0
+1397,32,9,2019,CA,Walker Fire,54612,Plumas,"Indian Creek and Beckworth Genesee Road, east of Genesee",40.061389,-120.680556,2019-09-04T15:17:31Z,,0
+1418,33,9,2019,CA,Tenaja,1926,Riverside,"Tenaja Road and Clinton Keith Road, in La Cresta",33.528469,-117.273157,2019-09-04T16:43:36Z,2019-09-14T19:00:00Z,10
+1438,33,9,2019,CA,Horseshoe Fire ,520,Riverside,"Horseshoe Trail and Stagecoach Road, Juniper Flats",33.4853,-117.043723,2019-09-14T17:53:00Z,,0
+1456,33,9,2019,CA,Sycamore Fire,250,Riverside,"Kangaroo Court and River Ridge Drive, Riverside ",33.9369,-117.3063,2019-09-07T20:31:46Z,2019-09-08T18:00:00Z,0
+1480,33,9,2019,CA,Bautista Fire,167,Riverside,"Bautista Road and Tripp Flats, West of Lake Hemet",33.635,-116.801111,2019-09-15T20:13:05Z,2019-09-22T18:00:00Z,6
+1509,33,9,2019,CA,Kennedy Fire,98,Riverside,"Moreno Beach Dr & John F. Kennedy Dr, near Lake Perris",33.900994,-117.170588,2019-09-21T17:22:00Z,2019-09-22T17:00:00Z,0
+1571,33,9,2019,CA,Redwood Fire,34,Riverside,Mead Valley ,33.854597,-117.270144,2019-09-12T20:30:41Z,,0
+1605,33,9,2019,CA,Warren Fire,19,Riverside,Warren Rd & Old Mine Rd in Hemet,33.703546,-117.033598,2019-09-30T07:07:00Z,2019-09-30T09:05:00Z,0
+1627,33,9,2019,CA,Bailey Fire,10,Riverside,Bailey Road and Terwilliger Road in Anza,33.496633,-116.631106,2019-09-10T10:43:58Z,2019-09-10T10:45:00Z,0
+1481,35,9,2019,CA,Antelope Fire,167,San Benito,"Panoche Road and New Idria Road, Paicines",36.600167,-120.8405,2019-09-02T15:40:37Z,2019-09-03T07:11:00Z,0
+1608,35,9,2019,CA,Foster Fire ,17,San Benito,"off of Grass Valley Road and Cienega Road, in Hollister",36.732866,-121.39478,2019-09-04T20:33:59Z,2019-09-04T20:33:00Z,-1
+1615,36,9,2019,CA,Telephone Fire,15,San Bernardino,"Old Dump Road, south of Summit Valley Road, Hesperia",34.353667,-117.343833,2019-09-02T20:27:29Z,2019-09-06T08:00:00Z,3
+1473,37,9,2019,CA,Dehesa Fire ,200,San Diego,Dehesa Road and Sloan Canyon Road,32.787656,-116.806941,2019-09-24T15:00:00Z,,0
+1551,37,9,2019,CA,Willow Fire,52,San Diego,"near 14000 block of Willow Rd, Northeast Lakeside ",32.87833333,-116.88,2019-09-25T14:17:25Z,2019-09-25T20:00:00Z,0
+1562,39,9,2019,CA,Flood Fire ,44,San Joaquin,"near Flood Rd and N. Waverly Road, Southwest of Rancho Calaveras",38.017138,-120.945044,2019-09-05T14:33:01Z,2019-09-05T19:56:00Z,0
+1462,40,9,2019,CA,Lopez Fire,220,San Luis Obispo,"Upper Lopez Canyon Road & Wittenberg Creek Rd, southeast of San Luis Obispo",35.214364,-120.455883,2019-09-21T14:26:00Z,2019-09-27T18:00:00Z,6
+1474,42,9,2019,CA,McMurray Fire,200,Santa Barbara,"McMurray Rd and Hwy 101, north of Buellton",34.630919,-120.187368,2019-09-09T17:42:43Z,2019-09-14T08:00:00Z,4
+1499,43,9,2019,CA,Reservoir Fire,128,Santa Clara,"Calaveras Rd and Felter Road, 5 miles northeast of Milpitas",37.467744,-121.842751,2019-09-21T11:49:00Z,2019-09-24T18:00:00Z,3
+1395,44,9,2019,CA,Deer Fire,10,Santa Cruz,"Deer Creek Road and Rons Road, northeast of Boulder Creek",37.178353,-122.07743,2019-09-03T15:36:45Z,2019-09-06T19:48:00Z,3
+1612,45,9,2019,CA,Cow Fire,16,Shasta,at Whitmore Road and Cow Creek Ranch Road in Millville,40.612556,-122.039167,2019-09-24T08:40:45Z,2019-09-24T14:52:00Z,0
+1419,47,9,2019,CA,Lime Fire,1872,Siskiyou,"Ash Creek and Highway 96, Southwest of Hornbrook",41.862237,-122.662258,2019-09-07T08:36:32Z,,0
+1460,47,9,2019,CA,Kidder 2 Fire,227,Siskiyou,"Marble Mountain Wilderness and Kidder Creek, Northwest of Etna",41.4929742,-123.2129356,2019-09-07T08:47:46Z,2019-09-26T08:00:00Z,18
+1515,47,9,2019,CA,Bar Fire,91,Siskiyou,"Southwest of Bald Mountain and Klamath Bar, Klamath National Forest",41.749667,-123.000833,2019-09-15T15:52:00Z,,0
+1614,47,9,2019,CA,Duzel Fire,15,Siskiyou,"Near Duzel Rock Lookout, northeast of Etna",41.512917,-122.740333,2019-09-07T18:19:16Z,2019-09-10T19:27:00Z,3
+1576,48,9,2019,CA,Mare Fire,30,Solano,"Off Tyler Road and Jennings Road, Southwest of Vallejo",38.07944444,-122.2561111,2019-09-26T15:29:06Z,,0
+1476,50,9,2019,CA,Stuhr Fire ,190,Stanislaus,"Off SB Interstate 5 and West Stuhr Road, South of Patterson City ",37.32585,-121.110146,2019-09-11T11:25:43Z,,0
+1622,50,9,2019,CA,Bridge Fire,11,Stanislaus,Knights Ferry,37.492002,-120.401028,2019-09-13T20:00:29Z,2019-09-13T21:43:00Z,0
+1401,52,9,2019,CA,Red Bank Fire,8838,Tehama,"Off Hammer Loop Road and Petty John Road, West of Red Bluff ",40.12,-122.64,2019-09-05T13:19:56Z,2019-09-13T19:00:00Z,8
+1405,52,9,2019,CA,South Fire,5332,Tehama,"Southeast aspect of Tomhead Mountain, South of Platina",40.109,-122.789,2019-09-05T19:59:46Z,2019-12-02T16:12:00Z,87
+1450,53,9,2019,CA,Rams Horn Fire,280,Trinity,"Highway 3 and Bear Creek Loop, Northeast of Coffee Creek",41.150392,-122.634108,2019-09-07T08:49:58Z,2019-09-12T10:08:00Z,5
+1457,53,9,2019,CA,Henthorne Fire,244,Trinity,"Yolla Bolly Middle Eel Wilderness near Henthorne Lake, North of Covelo",40.062304,-123.222196,2019-09-05T09:25:00Z,2019-09-18T12:17:00Z,13
+1444,54,9,2019,CA,Broder Fire,381,Tulare,Northeast of Broder Meadow,36.151,-118.185,2019-09-06T12:39:18Z,,0
+1520,55,9,2019,CA,Tulloch Fire,83,Tuolumne,"By the intersection of Tulloch Road and Highway 108 in Jamestown, California.",37.838333,-120.625556,2019-09-23T15:55:57Z,2019-09-24T10:21:00Z,0
+1452,56,9,2019,CA,Snail Fire,279,Ventura,3 miles northwest of Reyes Creek,34.71011,-119.3547,2019-09-01T17:37:43Z,2019-09-05T08:14:00Z,3
+1384,1,10,2019,CA,Mines Fire,35,Alameda,"Mines Rd and Del Valle Rd, southeast of Livermore",37.62782,-121.68598,2019-10-24T23:16:18Z,2019-10-27T13:55:00Z,2
+1618,1,10,2019,CA,Little Fire,12,Alameda,SR 84 and Little Valley Road in Sunol,37.606,-121.853,2019-10-08T17:25:12Z,2019-10-08T17:51:00Z,0
+1525,4,10,2019,CA,Nelson Fire ,80,Butte,Between Durham and Richvale,39.551423,-121.800538,2019-10-24T14:43:10Z,2019-10-24T17:15:00Z,0
+1382,7,10,2019,CA,Merrill Fire,40,Contra Costa,"Merrill Circle N and Merrill Dr, Moraga",37.828267,-122.103867,2019-10-10T06:42:19Z,2019-10-10T12:00:00Z,0
+1392,7,10,2019,CA,Nustar Fire,15,Contra Costa,"San Pablo Ave and Cummings Skyway, Crockett",38.045866,-122.245186,2019-10-15T16:17:18Z,,0
+1471,7,10,2019,CA,Cypress Complex,200,Contra Costa,"East Cypress Rd and Bethel Island Road, Knightsen, CA  ",37.99136,-121.64118,2019-10-27T08:50:23Z,2019-10-28T16:26:00Z,1
+1487,7,10,2019,CA,Sky Fire ,150,Contra Costa,"Commings Skyway and I-80, south of Crockett",38.03545,-122.2241,2019-10-27T11:29:03Z,2019-10-28T16:30:00Z,1
+1553,7,10,2019,CA,Forest Fire,50,Contra Costa,"Alhambra Ave and Alhambra Hills Dr, Martinez in Contra Costa County",37.97911,-122.11092,2019-10-27T17:36:15Z,2019-10-28T16:26:00Z,0
+1408,9,10,2019,CA,Caples Fire,3435,El Dorado,Northern ridge above Caples Creek north of Highway 88,38.724,-120.145,2019-10-11T12:47:59Z,,0
+1379,10,10,2019,CA,Mud Fire ,137,Fresno,"Los Gatos Creek Road and Joaquin Rocks Lookout Road, east of Coalinga",36.319291,-120.460189,2019-10-18T12:17:32Z,2019-10-19T15:00:00Z,1
+1541,11,10,2019,CA,Elk Fire,63,Glenn,Elk Creek,41.70611111,-123.4375,2019-10-04T12:03:48Z,2019-10-03T12:03:00Z,-2
+1588,17,10,2019,CA,Grove Fire,25,Lake,Hwy 29 and Spruce Grove Road in Lake County,38.88913,-122.604425,2019-10-17T20:06:00Z,,0
+1547,18,10,2019,CA,Horse Fire,55,Lassen,"Shaffer Mountain, Northeast of Susanville in Lassen County",40.387772,-120.304341,2019-10-13T14:45:37Z,2019-10-16T13:44:00Z,2
+1402,19,10,2019,CA,Saddle Ridge Fire,8799,Los Angeles,"Saddle Ridge Rd, Sylmar",34.32988,-118.48161,2019-10-10T21:02:00Z,2019-10-31T09:10:00Z,20
+1407,19,10,2019,CA,Tick Fire,4615,Los Angeles,"Tick Canyon Rd and Summit Knoll Rd, Canyon Country",34.472778,-118.368056,2019-10-24T14:51:46Z,,0
+1431,19,10,2019,CA,Getty Fire ,745,Los Angeles,East Sepulveda Blvd and I-405 near Los Angeles City ,34.098191,-118.478717,2019-10-28T06:46:55Z,2019-11-05T17:30:00Z,8
+1564,19,10,2019,CA,Palisades Fire,42,Los Angeles,"North Palisades Dr., Pacific Palisades",34.055768,-118.554091,2019-10-21T11:52:52Z,2019-10-31T14:16:00Z,10
+1536,21,10,2019,CA,Muir Fire,67,Marin,"Highway 1 and Panoramic Hwy, Stinson Beach",37.896231,-122.636471,2019-10-24T12:15:33Z,,0
+1404,22,10,2019,CA,Briceburg Fire,5563,Mariposa,Highway 140 and Briceburg Bridge Road north of Midpines ,37.604638,-119.96606,2019-10-06T16:15:12Z,,0
+1394,23,10,2019,CA,Wilson Fire,10,Mendocino,"Highway 101 south of Sloan and Old Sherwood Road in Willits, California",39.613783,-123.458782,2019-10-04T18:38:09Z,,0
+1432,23,10,2019,CA,Burris Fire,703,Mendocino,"Potter Valley Road and  Highway 20, east of Calpella in Mendocino County",39.22431,-123.12887,2019-10-27T14:54:40Z,2019-11-03T18:52:00Z,7
+1376,27,10,2019,CA,Cross Fire,289,Monterey,Indian Valley Road and Monterey County Line near Camp Robert's,35.79069,-120.73102,2019-10-09T06:52:14Z,2019-10-11T07:30:00Z,2
+1436,28,10,2019,CA,American Fire,526,Napa,"American Canyon and Highway 80, east of American Canyon",38.165873,-122.211671,2019-10-06T16:36:50Z,2019-10-07T18:34:00Z,1
+1372,33,10,2019,CA,Sandalwood Fire,1011,Riverside,Calimesa Boulevard and Sandalwood Drive,33.9925,-117.059167,2019-10-10T15:38:44Z,,0
+1374,33,10,2019,CA,Hill Fire ,494,Riverside,"Granite Hill and Pyrite Street, in Jurupa Valley ",34.01778,-117.4625,2019-10-30T11:19:00Z,2019-11-02T18:44:00Z,3
+1381,33,10,2019,CA,Wolf Fire,75,Riverside,"Wolfskill Truck Road near Silver Creek Drive, south of Banning",33.8615,-116.897333,2019-10-10T18:36:46Z,2019-10-12T17:22:00Z,1
+1445,33,10,2019,CA,Reche Fire,350,Riverside,"Reche Canyon Rd and Jordan Dr, Moreno Valley",33.975405,-117.207068,2019-10-10T14:18:17Z,2019-10-13T07:30:00Z,2
+1446,33,10,2019,CA,46 Fire,328,Riverside,"5300 block of 46th Street, East Jurupa Valley ",33.985972,-117.414111,2019-10-31T06:22:34Z,2019-11-03T16:15:00Z,3
+1631,33,10,2019,CA,Eagle Fire,9,Riverside,"Eagle Canyon Rd. and Cajalco Rd., southwest of Corona",33.827979,-117.499619,2019-10-10T12:08:00Z,2019-10-10T18:11:00Z,0
+1635,33,10,2019,CA,Johnson Fire ,,Riverside,Johnson Street and Ave 82,33.45148,-116.05898,2019-10-14T15:32:20Z,,0
+1470,36,10,2019,CA,Hillside Fire,200,San Bernardino,"off of W 59th and Hill Dr, in San Bernardino National Forest",34.183,-117.285,2019-10-31T06:53:47Z,2019-11-05T09:03:00Z,5
+1490,36,10,2019,CA,Old Water Fire,145,San Bernardino,near Old Waterman Canyon Road and Hwy 18. ,34.183624,-117.274276,2019-10-24T04:53:17Z,,0
+1620,36,10,2019,CA,Beaumont Fire,11,San Bernardino,Beaumont and San Timorese Canyon,34.033117,-117.21545,2019-10-21T08:16:33Z,2019-10-22T13:30:00Z,1
+1383,37,10,2019,CA,Miller Fire,37,San Diego,"Miller Lane and Cole Grade Lane, North of Valley Center ",33.259861,-117.027333,2019-10-25T15:05:52Z,2019-10-27T18:05:00Z,2
+1510,37,10,2019,CA,Sawday Fire ,97,San Diego,"Sawday Truck Trail and Little Page Rd, Community of Witch Creek ",33.055124,-116.742508,2019-10-25T10:52:04Z,2019-10-28T19:31:00Z,3
+1552,37,10,2019,CA,Copper Fire,50,San Diego,"off of Border road and Canyon Road, Southeast of Chula Vista ",32.564583,-116.834583,2019-10-31T06:39:56Z,,0
+1624,37,10,2019,CA,Fairmont Fire,10,San Diego,"Off Fairmont Avenue and Aldine Drive, Northwest of Talmadge",32.762706,-117.097441,2019-10-15T17:41:57Z,2019-10-16T13:50:00Z,0
+1634,37,10,2019,CA,Oak Fire,,San Diego,"Near Basilone Road and Las Pulgas Road, near Camp Pendleton North",33.351145,-117.403719,2019-10-22T19:20:44Z,,0
+1377,40,10,2019,CA,Cross Fire,289,San Luis Obispo,Indian Valley Road and Monterey County Line near Camp Robert's,35.79069,-120.73102,2019-10-09T06:52:14Z,2019-10-11T07:30:00Z,2
+1550,40,10,2019,CA,Ranch Fire,52,San Luis Obispo,"Off of Pozo Road and Avenales Ranch Rd, Southeast of Pozo",35.189783,-120.1755,2019-10-01T22:35:52Z,,0
+1575,40,10,2019,CA,Bitter Fire,30,San Luis Obispo,Highway 46 and Bitterwater Rd,35.709176,-120.312856,2019-10-11T12:30:19Z,2019-10-11T16:21:00Z,0
+1543,41,10,2019,CA,Cabrillo Fire,62,San Mateo,"Highway 1 and Gazos Creek Rd, south of Pescadero",37.166674,-122.361112,2019-10-24T20:15:36Z,2019-10-27T12:11:00Z,2
+1443,42,10,2019,CA,Real Fire,420,Santa Barbara,Calle Real & Hwy 101 west of El Capitan ,34.484722,-120.190833,2019-10-17T16:31:00Z,2019-10-21T06:00:00Z,3
+1582,43,10,2019,CA,Point Fire ,29,Santa Clara,Highway 152 and Dinosaur Point Rd ,37.066483,-121.219163,2019-10-07T09:58:51.763Z,2019-10-07T09:58:00Z,-1
+1565,45,10,2019,CA,Plains Fire,42,Shasta,Millville Plains Road and Sprig Road in Millville,40.4988,-122.19911,2019-10-10T15:49:07Z,2019-10-10T19:05:00Z,0
+1492,48,10,2019,CA,Glencove Fire ,140,Solano,"Glen Cove Pkwy and Lookout Dr, south of Vallejo",38.07205,-122.22463,2019-10-27T11:52:15Z,2019-10-28T16:28:00Z,1
+1396,49,10,2019,CA,Kincade Fire,77758,Sonoma,"John Kincade Road and Burned Mountain Road, northeast of Geyserville",38.792458,-122.780053,2019-10-23T21:27:00Z,2019-11-06T19:00:00Z,13
+1607,50,10,2019,CA,Del Fire,18,Stanislaus,Del Puerto Canyon Road east of Frank Raines Park west of Patterson,37.429506,-121.336465,2019-10-03T13:36:04Z,2019-10-04T10:39:00Z,0
+1373,52,10,2019,CA,Rawson Fire,605,Tehama,"Gyle Road and Long Dirt Road, Northwest of Corning",40.00171,-122.25421,2019-10-27T02:47:20Z,2019-10-28T07:22:00Z,1
+1535,52,10,2019,CA,Corning Fire ,68,Tehama,"Inghram Road, South Corning",39.847708,-122.1604,2019-10-09T08:31:40Z,2019-10-09T12:39:00Z,0
+1621,52,10,2019,CA,Dales Fire,11,Tehama,Highway 36E east of Dales Station and Manton Road,40.314187,-122.070055,2019-10-07T11:03:29.963Z,2019-10-07T11:03:00Z,-1
+1625,52,10,2019,CA,Inghram Fire,10,Tehama,"Inghram Road, South Corning",39.847708,-122.160416,2019-10-09T09:52:52.477Z,2019-10-08T09:52:00Z,-2
+1370,56,10,2019,CA,Easy Fire,1806,Ventura,"West Easy Street and West Los Angeles Avenue, Simi Valley",34.282179,-118.803389,2019-10-30T07:45:14Z,2019-11-02T18:57:00Z,3
+1400,56,10,2019,CA,Maria Fire ,9999,Ventura,"off of Bradley Road and Solano Verde Dr, Top of South Mt, Santa Paula",34.302212,-118.997115,2019-10-31T20:58:28Z,2019-11-06T18:00:00Z,5
+1472,56,10,2019,CA,Olivas Fire,200,Ventura,"Olivas Park Drive, near the Buenaventura Golf Course",34.23955,-119.20187,2019-10-11T15:57:10Z,2019-10-12T18:00:00Z,1
+1514,56,10,2019,CA,Wendy Fire,91,Ventura,"Potrero Rd and S Wendy Dr, Newbury Park",34.156389,-118.950833,2019-10-10T21:28:58Z,,0
+1532,17,11,2019,CA,Eagle Fire,75,Lake,"Walker Ridge Road and Bartlett Springs Road, northeast of Clearlake",39.100408,-122.496548,2019-11-05T06:52:14Z,2019-11-06T18:30:00Z,1
+1375,31,11,2019,CA,Foothills Fire,355,Placer,"Foothills and McAnally Drive, northwest of Roseville",38.838992,-121.325842,2019-11-25T12:39:44Z,,0
+1604,33,11,2019,CA,Sobrante Fire ,19,Riverside,"off of La Sierra Ave and Tin Mine Road,  East of Corona ",33.849906,-117.461363,2019-11-01T13:04:34Z,2019-11-01T08:55:00Z,-1
+1410,42,11,2019,CA,Cave Fire (No Longer a CAL FIRE Incident),3126,Santa Barbara,Highway 154 and E Camino Cielo near Painted Cave in the Los Padres National Forest,34.5025,-119.785,2019-11-25T19:59:12Z,2019-12-14T08:22:00Z,18
+1412,52,11,2019,CA,Ranch Fire,2534,Tehama,"Colyer Springs Rd and Raglin Ridge Rd, southwest of Red Bluff",40.036379,-122.637837,2019-11-03T14:16:17Z,2019-11-14T18:02:00Z,11
+1633,57,11,2019,CA,Cashe Fire ,,Yolo,"County Road 102 and County Road 17, North of Woodland",38.734634,-121.729691,2019-11-25T12:02:02Z,,0
