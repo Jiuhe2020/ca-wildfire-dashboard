@@ -38,8 +38,8 @@
 
   ### Part II - PostgreSQL Database
   1. Created a wildfires_db with the following tables:
-    - Temps (primary key = county_id and month_number)
-    - Wildfires (primary key = fire_id)
+      - Temps (primary key = county_id and month_number)
+      - Wildfires (primary key = fire_id)
 
 ## API and Interactive Dashboard Phase
 
