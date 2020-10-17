@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>California WildFire 2019</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/style1.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">California Dashboard
+            <!-- <img class="nav-ufo" src="static/images/3000.webp"> -->
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="hero text-center">
+      <h1>California Wildfires 2019</h1>
+      <p>Climate change is real</p>
+    </div>
+    <div class="container">
+      <div class="row margin-top-50">
+        <div class="col-md-2">
+          <aside class="filters">
+            <div class="panel panel-default">
+              <div class="panel-heading">Filter Search</div>
+              <div class="panel-body">
+                <form id='form'>
+                  <div class="form-group">
+                    <ul class="list-group" id="filters">
+                      <li class="filter list-group-item">
+                        <label for="date">Enter a Month</label>
+                        <input class="form-control" id="Month" type="text" placeholder="January">
+                        <label for="date">Enter a County</label>
+                        <input class="form-control" id="County" type="text" placeholder="Ventura">
+                        <label for="date">Enter Aces Burned</label>
+                        <input class="form-control" id="AcesBurned" type="text" placeholder="100.0">
+                        <div class='rangeWrap'>
+                          <input type="range" id="AcesBurned" min="0" max="77758.0" step="1"  value="266" />
+                          <div class='ticks'>
+                          <div></div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
+                </form>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <div class="col-md-10">
+          <div id="table-area" class="">
+            <table id="ufo-table" class="table table-striped" background = "static/images/index.jpg" >
+              <thead>
+                <tr>
+                  <th class="table-head">Index</th>
+                  <th class="table-head">Aces Burned</th>
+                  <th class="table-head">Fire Dept.</th>
+                  <th class="table-head">Counties</th>
+                  <th class="table-head">County ID</th>
+                  <th class="table-head">Lat</th>
+                  <th class="table-head">Lon</th>
+                  <th class="table-head">Location</th>
+                  <th class="table-head">Name of Fire</th>
+                  <th class="table-head">Description of the Fire</th>
+                  <th class="table-head">Year</th>
+                  <th class="table-head">Start of the Fire</th>
+                  <th class="table-head">End of the Fire</th>
+                  <th class="table-head">Month Name</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <span class="bottom">California WildFires</span>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <script src="static/js/datas.js"></script>
+  <script src="static/js/app.js"></script>
+</body>
+
+</html>
