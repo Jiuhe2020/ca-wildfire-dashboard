@@ -85,7 +85,7 @@ counties.addTo(myMap);
 // Create fire icons on the map
 var fireIcons = L.Icon.extend(
   {options: {
-    shadowUrl: 'https://raw.githubusercontent.com/zcheatle5/ca-wildfire-dashboard/main/fire_icons/markers_shadow.png',
+    shadowUrl: 'https://raw.githubusercontent.com/zcheatle5/ca-wildfire-dashboard/main/static/images/fire_icons/markers_shadow.png',
     iconSize: [60, 80],
     iconAnchor: [30, 50],
     popupAnchor: [0, -20],
