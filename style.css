@@ -95,14 +95,6 @@ body{
     margin-top: 15px;
 }
 
-.container.content.bg-white {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 150%;
-}
-
 /* small screen adjustments*/
 @media(max-width:767px){
     .navbar.bg-light{

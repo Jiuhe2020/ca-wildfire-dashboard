@@ -1,0 +1,1 @@
+key = ("postgresql://postgres:PanthersLax_5@localhost:5432/wildfires_db")

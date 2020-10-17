@@ -6,7 +6,7 @@ from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, func
 
-from flask import Flask, jsonify, render_template
+from flask import Flask, jsonify
 
 from config import key
 
@@ -27,7 +27,7 @@ Temp = Base.classes.temps
 #################################################
 # Flask Setup
 #################################################
-app = Flask(__name__, template_folder="templates")
+app = Flask(__name__)
 
 # this keeps flask jsonify from alphabetically ordering the json data
 app.config['JSON_SORT_KEYS'] = False
@@ -38,9 +38,12 @@ app.config['JSON_SORT_KEYS'] = False
 
 @app.route("/")
 def index():
-    """Serve homepage template"""
-    return render_template('index.html')
-
+     return (
+        f"Welcome to the Wildfires API!<br/>"
+        f"Available Routes:<br/>"
+        f"/api/v1.0/wildfire_names<br/>"
+        f"/api/v1.0/wildfire_data<br/>"
+    )
     
 @app.route("/api/v1.0/wildfire_names")
 def wildfire_names():

@@ -23,18 +23,21 @@
   </head>
   <body>
     <div class="container">
+      <!-- https://media.giphy.com/media/1QiMXaDe9cKFlL0T1d/giphy.gif -->
+      <!-- https://media.giphy.com/media/3o85xJY1FaLzqeoBGw/giphy.gif -->
       <div class="row">
-        <div class="col-md-12 jumbotron text-center" style = "background-image: url(https://media1.giphy.com/media/Pjsh1SlQ4KnT9MP6JH/giphy.gif); background-size: 100%;">
+        <div class="col-md-12 jumbotron text-center" style = "background-image: url(https://media.giphy.com/media/1QiMXaDe9cKFlL0T1d/giphy.gif); background-size: 100%;">
           <h1 style= "color: #FFFFFF;">2019 California Wildfires Dashboard</h1>
-          <p style= "color: #FFFFFF;">Use the buttons below to explore the dataset</p>
+          <p style= "color: #FFFFFF;">Use the interactive map below to explore the dataset</p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12 text-center">
           <a class="btn btn-info btn-lg" href="charts.html" role="button">Temperature Chart</a>
           <a class="btn btn-warning btn-lg" href="pcharts.html" role="button">Wildfire Analysis Charts</a>
-          <a class="btn btn-success btn-lg" href="heat.html" role="button">Time Lapse Map</a>
+          <a class="btn btn-success btn-lg" href="heat.html" role="button">Timed HeatMap</a>
           <a class="btn btn-danger btn-lg" href="data.html" role="button">Data Table</a>
+          <!-- <a class="btn btn-danger btn-lg" href="/api/v1.0/wildfire_data" role="button">Wildfires API</a> -->
           <hr>
         </div>
       </div>
@@ -60,9 +63,9 @@
     <div id="map"></div>
 
     <!-- API key -->
-    <script type="text/javascript" src="../static/js/config.js"></script>
+    <script type="text/javascript" src="static/js/config.js"></script>
     <!-- JS  -->
-    <script type="text/javascript" src="../static/js/logic.js"></script>
+    <script type="text/javascript" src="static/js/logic.js"></script>
 
   </body>
 </html>
