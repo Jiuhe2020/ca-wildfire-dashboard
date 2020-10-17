@@ -85,7 +85,7 @@ counties.addTo(myMap);
 // Create fire icons on the map
 var fireIcons = L.Icon.extend(
   {options: {
-    shadowUrl: 'https://raw.githubusercontent.com/zcheatle5/ca-wildfire-dashboard/main/fire_icons/markers_shadow.png',
+    shadowUrl: 'https://raw.githubusercontent.com/zcheatle5/ca-wildfire-dashboard/main/static/images/fire_icons/markers_shadow.png',
     iconSize: [60, 80],
     iconAnchor: [30, 50],
     popupAnchor: [0, -20],
@@ -387,12 +387,12 @@ d3.json(wildfirelink, function(wildfireData) {
    legend.onAdd = function() {
      var div = L.DomUtil.create("div", "info legend"),
      mag = [0, 500, 1000, 5000, 10000, 50000];
-     icons = ['https://raw.githubusercontent.com/zcheatle5/ca-wildfire-dashboard/main/fire_icons/fire_icon_6.png',
-        'https://raw.githubusercontent.com/zcheatle5/ca-wildfire-dashboard/main/fire_icons/fire_icon_5.png',
-        'https://raw.githubusercontent.com/zcheatle5/ca-wildfire-dashboard/main/fire_icons/fire_icon_4.png',
-        'https://raw.githubusercontent.com/zcheatle5/ca-wildfire-dashboard/main/fire_icons/fire_icon_3.png',
-        'https://raw.githubusercontent.com/zcheatle5/ca-wildfire-dashboard/main/fire_icons/fire_icon_2.png',
-        'https://raw.githubusercontent.com/zcheatle5/ca-wildfire-dashboard/main/fire_icons/fire_icon_1.png'
+     icons = ['https://raw.githubusercontent.com/zcheatle5/ca-wildfire-dashboard/main/static/images/fire_icons/fire_icon_6.png',
+        'https://raw.githubusercontent.com/zcheatle5/ca-wildfire-dashboard/main/static/images/fire_icons/fire_icon_5.png',
+        'https://raw.githubusercontent.com/zcheatle5/ca-wildfire-dashboard/main/static/images/fire_icons/fire_icon_4.png',
+        'https://raw.githubusercontent.com/zcheatle5/ca-wildfire-dashboard/main/static/images/fire_icons/fire_icon_3.png',
+        'https://raw.githubusercontent.com/zcheatle5/ca-wildfire-dashboard/main/static/images/fire_icons/fire_icon_2.png',
+        'https://raw.githubusercontent.com/zcheatle5/ca-wildfire-dashboard/main/static/images/fire_icons/fire_icon_1.png'
       ]
 
      div.innerHTML += "<h5 align='center'><b>Acres Burned</b></h5>"
