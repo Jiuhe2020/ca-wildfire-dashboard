@@ -1,8 +1,8 @@
 # 2019 California Wildfire Dashboard
-
+Deployment Link: https://zcheatle5.github.io/ca-wildfire-dashboard/
 
 ## Project Proposal
-- Design an interactive JavaScript dashboard webpage containing an interactive leaflet map, time lapse visualization, and data table for the 2019 California Wildfires where the user can filter the data by month. Dashboard will be initialized with flask application that     will store all data into a PostgreSQL database and create an API.
+- Design an interactive JavaScript dashboard webpage containing an interactive leaflet map, time lapse visualization, and data table for the 2019 California Wildfires where the user can filter the data by month. Dashboard will be initialized with flask application that will store all data into a PostgreSQL database and create an API.
   
    ### Team Members:
       - Zac Cheatle
